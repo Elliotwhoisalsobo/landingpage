@@ -1,0 +1,23 @@
+# Negeer gevoelige configuratie (bevat Supabase credentials)
+config/supabase-config.js
+
+# Stray directory (per ongeluk aangemaakt)
+-p/
+
+# Agent/editor metadata — specifiek voor lokale ontwikkelomgeving
+.agents/
+.claude/
+.pi/
+skills-lock.json
+
+# Oude werkversie — niet langer relevant
+index_company_email_fields_updated.html
+
+# OS bestanden
+.DS_Store
+Thumbs.db
+*.swp
+
+# IDE bestanden
+.idea/
+*.iml
