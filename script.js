@@ -168,57 +168,57 @@
 
 })();
 
-/* Product popups */
-(() => {
+/* Product popups — uitgeschakeld */
+// (() => {
 
-  const cards = document.querySelectorAll('[data-popup]');
+//   const cards = document.querySelectorAll('[data-popup]');
 
-  const overlays = document.querySelectorAll('.popup-overlay');
+//   const overlays = document.querySelectorAll('.popup-overlay');
 
-  function openPopup(id) {
+//   function openPopup(id) {
 
-    const popup = document.getElementById(id);
+//     const popup = document.getElementById(id);
 
-    if (popup) popup.hidden = false;
+//     if (popup) popup.hidden = false;
 
-  }
+//   }
 
-  function closeAll() {
+//   function closeAll() {
 
-    overlays.forEach((el) => el.hidden = true);
+//     overlays.forEach((el) => el.hidden = true);
 
-  }
+//   }
 
-  cards.forEach((card) => {
+//   cards.forEach((card) => {
 
-    card.addEventListener('click', () => openPopup(card.dataset.popup));
+//     card.addEventListener('click', () => openPopup(card.dataset.popup));
 
-  });
+//   });
 
-  overlays.forEach((overlay) => {
+//   overlays.forEach((overlay) => {
 
-    /* Sluit bij klik op de achtergrond, niet op de popup zelf */
+//     /* Sluit bij klik op de achtergrond, niet op de popup zelf */
 
-    overlay.addEventListener('click', (e) => {
+//     overlay.addEventListener('click', (e) => {
 
-      if (e.target === overlay) closeAll();
+//       if (e.target === overlay) closeAll();
 
-    });
+//     });
 
-    /* Sluitknop */
+//     /* Sluitknop */
 
-    const btn = overlay.querySelector('.popup-close');
+//     const btn = overlay.querySelector('.popup-close');
 
-    if (btn) btn.addEventListener('click', () => closeAll());
+//     if (btn) btn.addEventListener('click', () => closeAll());
 
-  });
+//   });
 
-  /* Escape-toets sluit alle popups */
+//   /* Escape-toets sluit alle popups */
 
-  document.addEventListener('keydown', (e) => {
+//   document.addEventListener('keydown', (e) => {
 
-    if (e.key === 'Escape') closeAll();
+//     if (e.key === 'Escape') closeAll();
 
-  });
+//   });
 
-})();
+// })();
