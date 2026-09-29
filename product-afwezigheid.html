@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="LexFlow Langdurige afwezigheid — opvolgingssoftware voor KMO's." />
+
+  <title>LexFlow | Langdurige afwezigheid</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Caslon+Display&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="config/supabase-config.js"></script>
+  <script src="script.js" defer></script>
+
+  <style>
+    .company-email-inline {
+      width: min(860px, 100%);
+    }
+
+    .company-email-row {
+      display: grid;
+      grid-template-columns: minmax(170px, 0.78fr) minmax(230px, 1.15fr) auto;
+      align-items: stretch;
+      overflow: hidden;
+      padding: 4px;
+      border: 1px solid rgba(10, 59, 48, 0.14);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.78);
+      box-shadow: 0 14px 34px rgba(31, 62, 51, 0.07);
+      backdrop-filter: blur(10px);
+    }
+
+    .company-email-field {
+      display: flex;
+      align-items: center;
+      min-width: 0;
+      background: transparent;
+    }
+
+    .company-email-field.company-field {
+      border-right: 1px solid rgba(10, 59, 48, 0.10);
+    }
+
+    .company-email-field .field-icon {
+      flex: 0 0 auto;
+      margin-left: 16px;
+      color: #6d817a;
+      font-size: 1.15rem;
+    }
+
+    .company-email-field input {
+      width: 100%;
+      min-width: 0;
+      border: 0;
+      outline: 0;
+      padding: 17px 14px;
+      color: var(--ink);
+      background: transparent;
+      font: inherit;
+    }
+
+    .company-email-field input::placeholder {
+      color: #74867f;
+    }
+
+    .company-email-field input:focus-visible {
+      outline: none;
+    }
+
+    .company-email-inline .submit-button {
+      min-width: 220px;
+      border-radius: 11px;
+    }
+
+    @media (max-width: 820px) {
+      .company-email-row {
+        grid-template-columns: 1fr;
+      }
+
+      .company-email-field.company-field {
+        border-right: 0;
+        border-bottom: 1px solid rgba(10, 59, 48, 0.10);
+      }
+
+      .company-email-field.email-field {
+        border-bottom: 1px solid rgba(10, 59, 48, 0.10);
+      }
+
+      .company-email-inline .submit-button {
+        width: 100%;
+        min-height: 56px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <main class="page-shell page-shell--product">
+
+    <div class="background-layer" aria-hidden="true">
+
+      <div class="paper-noise"></div>
+
+      <div class="spiral spiral-1"></div>
+      <div class="spiral spiral-2"></div>
+
+    </div>
+
+    <header class="site-header container">
+
+      <a class="brand" href="index.html" aria-label="LexFlow home">
+
+        <span class="brand-mark" aria-hidden="true">L</span>
+
+        <span class="brand-name">LEXFLOW</span>
+
+      </a>
+
+      <nav class="product-nav">
+        <a href="index.html" class="back-link">
+          <i class="ph ph-arrow-left" aria-hidden="true"></i>
+          Terug naar overzicht
+        </a>
+      </nav>
+
+    </header>
+
+    <section class="product-page container">
+
+      <div class="product-page-header">
+
+        <span class="product-page-badge">Fase 2</span>
+
+        <div class="product-page-icon" aria-hidden="true">
+          <i class="ph ph-users" aria-hidden="true"></i>
+        </div>
+
+        <h1 class="product-page-title">Langdurige afwezigheid</h1>
+
+        <p class="product-page-subtitle">
+          Voor KMO's die langdurig zieke medewerkers actief willen opvolgen.
+          <strong>Minder kost. Minder gemiste stappen.</strong>
+        </p>
+
+      </div>
+
+      <div class="product-page-section">
+        <h2>Waarom dit er is</h2>
+        <p>
+          Langdurige afwezigheid kost een KMO niet alleen productiviteit, maar
+          ook heel veel tijd aan opvolging. Termijnen worden gemist, dossiers
+          blijven stilstaan en de re-integratie sleept maanden aan.
+        </p>
+        <p>
+          Zonder centraal systeem verlies je overzicht. Met LexFlow hou je elk
+          dossier actief zonder dat HR er fulltime mee bezig is.
+        </p>
+      </div>
+
+      <div class="product-page-section">
+        <h2>Wat het doet</h2>
+
+        <div class="product-feature-grid">
+
+          <div class="product-feature">
+            <div class="product-feature-icon" aria-hidden="true">
+              <i class="ph ph-folder-open" aria-hidden="true"></i>
+            </div>
+            <div class="product-feature-text">
+              <h3>Dossiers centraal beheren</h3>
+              <p>Bewaar alle stappen, documenten en acties in &eacute;&eacute;n overzichtelijk dossier. Geen losse mappen meer.</p>
+            </div>
+          </div>
+
+          <div class="product-feature">
+            <div class="product-feature-icon" aria-hidden="true">
+              <i class="ph ph-calendar" aria-hidden="true"></i>
+            </div>
+            <div class="product-feature-text">
+              <h3>Termijnen &amp; mijlpalen</h3>
+              <p>Zie wat wanneer moet gebeuren. Ontvang tijdige herinneringen zodat je geen verplichte termijn mist.</p>
+            </div>
+          </div>
+
+          <div class="product-feature">
+            <div class="product-feature-icon" aria-hidden="true">
+              <i class="ph ph-list-checks" aria-hidden="true"></i>
+            </div>
+            <div class="product-feature-text">
+              <h3>Re-integratiechecklists</h3>
+              <p>Bereid gesprekken voor met ingebouwde stappenplannen. Leg mogelijkheden voor werkhervatting systematisch vast.</p>
+            </div>
+          </div>
+
+          <div class="product-feature">
+            <div class="product-feature-icon" aria-hidden="true">
+              <i class="ph ph-eye" aria-hidden="true"></i>
+            </div>
+            <div class="product-feature-text">
+              <h3>Voortgang &amp; risico's</h3>
+              <p>Zie in &eacute;&eacute;n oogopslag welke dossiers stilstaan en waar extra opvolging nodig is.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="product-page-section product-page-section--highlight">
+        <h2>Voor wie</h2>
+        <p>
+          Voor KMO's die de kosten van langdurige afwezigheid willen verlagen
+          door sneller en gestructureerder op te volgen, zonder dure
+          consultancy of complexe enterprise-software.
+        </p>
+      </div>
+
+      <div class="product-page-section">
+        <h2>Klaar om te starten?</h2>
+        <p class="product-page-cta-copy">
+          LexFlow is in ontwikkeling. Meld je aan en blijf op de hoogte van de lancering.
+        </p>
+
+        <form class="waitlist-form company-email-inline" id="waitlist-form" novalidate>
+
+          <label class="sr-only" for="company">Bedrijf</label>
+          <label class="sr-only" for="email">E-mailadres</label>
+
+          <div class="company-email-row">
+
+            <div class="company-email-field company-field">
+              <i class="ph ph-buildings field-icon" aria-hidden="true"></i>
+              <input
+                id="company"
+                name="company"
+                type="text"
+                autocomplete="organization"
+                placeholder="Bedrijf"
+                aria-describedby="form-message"
+              />
+            </div>
+
+            <div class="company-email-field email-field">
+              <i class="ph ph-envelope field-icon" aria-hidden="true"></i>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                inputmode="email"
+                placeholder="Werk e-mailadres"
+                aria-describedby="form-message"
+                required
+              />
+            </div>
+
+            <button type="submit" class="submit-button">
+              <span>Blijf op de hoogte</span>
+              <i class="ph ph-arrow-right" aria-hidden="true"></i>
+            </button>
+
+          </div>
+
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+
+        </form>
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+
+</html>
