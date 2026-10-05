@@ -52,28 +52,6 @@
 
   }
 
-  function saveDemoSignup(email, company) {
-
-    const key = 'lexflow_waitlist_demo';
-
-    const signups = JSON.parse(localStorage.getItem(key) || '[]');
-
-    if (!signups.some((item) => item.email.toLowerCase() === email.toLowerCase())) {
-
-      signups.push({
-
-        email,
-        company: company || null,
-
-        createdAt: new Date().toISOString()
-
-      });
-
-      localStorage.setItem(key, JSON.stringify(signups));
-
-    }
-
-  }
 
   emailInput.addEventListener('input', clearMessage);
 
@@ -101,47 +79,35 @@
     try {
 
       const supabaseUrl = window.SUPABASE_URL;
-
       const supabaseKey = window.SUPABASE_KEY;
 
-      if (supabaseUrl && supabaseKey) {
+      const insertData = { email };
+      if (company) insertData.company = company;
 
-        const insertData = { email };
-        if (company) insertData.company = company;
+      const response = await fetch(`${supabaseUrl}/rest/v1/email_list`, {
+        method: 'POST',
+        headers: {
+          'apikey': supabaseKey,
+          'Authorization': `Bearer ${supabaseKey}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(insertData),
+      });
 
-        const response = await fetch(`${supabaseUrl}/rest/v1/email_list`, {
-          method: 'POST',
-          headers: {
-            'apikey': supabaseKey,
-            'Authorization': `Bearer ${supabaseKey}`,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(insertData),
-        });
-
-        if (!response.ok) {
-          if (response.status === 409) {
-            const body = await response.json().catch(() => ({}));
-            if (body.code === '23505') {
-              showMessage('U staat al op de lijst.', 'success');
-            } else {
-              throw new Error(body.message || 'Onbekende fout');
-            }
+      if (!response.ok) {
+        if (response.status === 409) {
+          const body = await response.json().catch(() => ({}));
+          if (body.code === '23505') {
+            showMessage('U staat al op de lijst.', 'success');
           } else {
-            throw new Error(`HTTP ${response.status}`);
+            throw new Error(body.message || 'Onbekende fout');
           }
         } else {
-          form.reset();
-          showMessage('Bedankt. We houden u op de hoogte zodra LexFlow meer kan tonen.', 'success');
+          throw new Error(`HTTP ${response.status}`);
         }
-
       } else {
-
-        // Demo fallback: bewaar lokaal in de browser.
-        saveDemoSignup(email, company);
         form.reset();
         showMessage('Bedankt. We houden u op de hoogte zodra LexFlow meer kan tonen.', 'success');
-
       }
 
     } catch (error) {
