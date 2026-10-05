@@ -1,5 +1,4 @@
-# Negeer gevoelige configuratie (bevat Supabase credentials)
-config/supabase-config.js
+
 
 # Stray directory (per ongeluk aangemaakt)
 -p/
