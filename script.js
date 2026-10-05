@@ -106,48 +106,40 @@
 
       if (supabaseUrl && supabaseKey) {
 
-        const sb = supabase.createClient(supabaseUrl, supabaseKey);
+        const insertData = { email };
+        if (company) insertData.company = company;
 
-        const insertData = { email }; // mandatory
-        if (company) insertData.company = company; // optional 
+        const response = await fetch(`${supabaseUrl}/rest/v1/email_list`, {
+          method: 'POST',
+          headers: {
+            'apikey': supabaseKey,
+            'Authorization': `Bearer ${supabaseKey}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(insertData),
+        });
 
-        const { error } = await sb
-
-          .from('email_list')
-
-          .insert(insertData);
-          
-
-        if (error) {
-
-          if (error.code === '23505') {
-
-            showMessage('U staat al op de lijst.', 'success');
-
+        if (!response.ok) {
+          if (response.status === 409) {
+            const body = await response.json().catch(() => ({}));
+            if (body.code === '23505') {
+              showMessage('U staat al op de lijst.', 'success');
+            } else {
+              throw new Error(body.message || 'Onbekende fout');
+            }
           } else {
-
-            throw new Error(error.message);
-
+            throw new Error(`HTTP ${response.status}`);
           }
-
         } else {
-
           form.reset();
-
           showMessage('Bedankt. We houden u op de hoogte zodra LexFlow meer kan tonen.', 'success');
-
         }
 
       } else {
 
         // Demo fallback: bewaar lokaal in de browser.
-
-        // Vul config/supabase-config.js in om Supabase te gebruiken.
-
         saveDemoSignup(email, company);
-
         form.reset();
-
         showMessage('Bedankt. We houden u op de hoogte zodra LexFlow meer kan tonen.', 'success');
 
       }
