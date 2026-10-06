@@ -64,7 +64,7 @@ De starter leverde Nuxt 4.5.2, Vue 3.5.43 en Vue Router 5.3.1. `package-lock.jso
 
 ## Publicatie en veiligheidsblokkade
 
-De eigenaar heeft de veilige Supabase-grants/RLS en een geslaagde echte testinschrijving bevestigd en expliciet vrijgave gegeven voor `main` en publicatie. De resterende upstreamrisico's in de ontwikkel-/buildketen zijn daarbij geaccepteerd voor deze statische site. Nuxt Devtools staat uit en de ontwikkelserver is standaard beperkt tot localhost. De uitvoeringsstatus en CI-resultaten staan in [`verification.md`](openspec/changes/migrate-landingpage-to-nuxt/verification.md).
+De Nuxt-site draait op **https://lexflow.be** via GitHub Actions vanaf de beschermde standaardbranch **`main`**. De eigenaar heeft de veilige Supabase-grants/RLS en een geslaagde echte testinschrijving bevestigd en expliciet vrijgave gegeven voor `main` en publicatie. De resterende upstreamrisico's in de ontwikkel-/buildketen zijn daarbij geaccepteerd voor deze statische site. Nuxt Devtools staat uit en de ontwikkelserver is standaard beperkt tot localhost. De uitvoeringsstatus en CI-resultaten staan in [`verification.md`](openspec/changes/migrate-landingpage-to-nuxt/verification.md).
 
 `.github/workflows/deploy.yml` bouwt en test migratie-/main-pushes en pull requests. Een pull request of migratiebranch kan nooit publiceren. Publicatie vereist alle volgende voorwaarden:
 
@@ -85,4 +85,4 @@ De dependency-audit bevat nog upstreammeldingen, waaronder kritieke meldingen in
 
 Bij een mislukte omschakeling: stop de nieuwe deployment, verwijder de publicatievrijgave en herstel Pages-publicatie vanaf `frontpage`, root `/`, met `lexflow.be` en HTTPS. Controleer eerst dat `frontpage` nog naar de vastgelegde live commit wijst; maak anders een herstelbranch vanaf `legacy-live-before-nuxt`. Herbouw Pages en controleer de site. Er is geen force-push of reset van `main` nodig.
 
-De definitieve omschakeling naar `main`, branchbescherming en live controle zijn nog aparte vrijgavetaken in [`tasks.md`](openspec/changes/migrate-landingpage-to-nuxt/tasks.md).
+De omschakeling naar `main`, branchbescherming en live controle zijn afgerond in [`tasks.md`](openspec/changes/migrate-landingpage-to-nuxt/tasks.md). De vereiste CI-check geldt ook voor beheerders; force-pushes en verwijdering van `main` zijn geblokkeerd.

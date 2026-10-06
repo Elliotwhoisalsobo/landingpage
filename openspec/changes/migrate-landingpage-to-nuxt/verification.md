@@ -67,9 +67,19 @@
 - Na de maatregelen opnieuw geslaagd: typecontrole, mocktests en `npm run build -- --preset github_pages`. De ontwikkelserver is gestart op testpoort 4175: HTTP 200 en de Windows-socketcontrole bevestigt uitsluitend `127.0.0.1:4175`.
 - Bronnen: https://github.com/advisories/GHSA-vfj7-8cjw-p6xm en https://github.com/advisories/GHSA-86w9-cpqp-85rv; pakketversies en afhankelijkheden gecontroleerd via npm-registry en `npm ls`.
 
-## Nog niet voltooid
-- Taken 6.3–6.4: `main`/standaardbranch, branchbescherming, Pages-omschakeling en live verificatie zijn nu vrijgegeven, maar moeten nog uitgevoerd en geverifieerd worden. Tot de omschakeling blijft productie op `frontpage`.
+## Omschakeling en live controle afgerond
+
+- De aangescherpte configuratie is opnieuw getest op `migration/nuxt`: [CI-run 37461353919](https://github.com/Elliotwhoisalsobo/landingpage/actions/runs/37461353919), commit `2e3f7c3b1449bb389e4b7ebe923a7a705acb787f`.
+- `main` is zonder force-push vanuit die geteste commit aangemaakt en gepusht. Ook de eigen [main-CI-run 37461442084](https://github.com/Elliotwhoisalsobo/landingpage/actions/runs/37461442084) is geslaagd voordat publicatie werd vrijgegeven.
+- GitHub-standaardbranch is `main`. Branchbescherming vereist de actuele groene check `Typecontrole, tests en statische build` van GitHub Actions (app 15368), ook voor beheerders. Force-pushes en branchverwijdering zijn verboden.
+- Het bestaande `github-pages`-environment staat nu ook publicatie vanaf `main` toe; de bestaande branchregels zijn behouden.
+- Pages is omgezet naar `build_type: workflow`, met behoud van custom domain `lexflow.be` en afgedwongen HTTPS. De expliciet goedgekeurde repositoryvariabele `PRODUCTION_RELEASE_APPROVED` is op `true` gezet.
+- [Productierun 37461709863](https://github.com/Elliotwhoisalsobo/landingpage/actions/runs/37461709863) is volledig geslaagd: installatie, typecontrole, tests, configuratiecontrole, Pages-build, artifactupload en publicatie.
+- `https://lexflow.be` levert HTTP 200 met de Nuxt-app en vooraf gerenderde inhoud. De publieke configuratie komt overeen met de lokale gecontroleerde waarden, zonder deze in de logs weer te geven. Zes gerefereerde JavaScript-/CSS-assets leveren HTTP 200 met passende niet-HTML-inhoud.
+- De gepubliceerde site is in Chrome gecontroleerd op 320, 390, 768 en 1440px. Desktop/tablet komen overeen met legacy; mobiele kaarten hebben één kolom zonder interne tekstoverloop. Metadata, iconen, één analyticsinitialisatie, focus, laadstatus, dubbele verzending, succes-/foutpaden en reduced motion slagen; geen JavaScript-/hydrationfouten.
+- Tijdens deze live browsercontrole zijn Supabase-POSTs en analyticsverkeer gemockt. Geen extra productie-inschrijvingen aangemaakt. De echte opslag- en RLS-controle berust op de eerder expliciet vastgelegde bevestiging van de eigenaar.
+- Alle 23 uitvoeringstaken zijn afgerond. De upstreamauditmeldingen blijven zichtbaar en vallen onder de expliciete risicoacceptatie; deze migratie heeft ze niet opgelost.
 
 ## Terugvalprocedure
 
-Stop een actieve Nuxt-deployment. Herstel GitHub Pages naar publicatie vanaf de branch `frontpage`, root `/`, met custom domain `lexflow.be` en HTTPS. Controleer dat `frontpage` nog naar de vastgelegde live commit verwijst; gebruik anders een nieuwe herstelbranch vanaf `legacy-live-before-nuxt`, zonder bestaande branches terug te zetten. Start de Pages-build opnieuw en controleer de live site. De standaardbranch kan afzonderlijk terug naar `master`; geen force-push of reset van `main` nodig.
+Stop een actieve Nuxt-deployment en verwijder `PRODUCTION_RELEASE_APPROVED` of zet deze op `false`. Herstel GitHub Pages naar publicatie vanaf de branch `frontpage`, root `/`, met custom domain `lexflow.be` en HTTPS. Controleer dat `frontpage` nog naar de vastgelegde live commit verwijst; gebruik anders een nieuwe herstelbranch vanaf `legacy-live-before-nuxt`, zonder bestaande branches terug te zetten. Start de Pages-build opnieuw en controleer de live site. De standaardbranch kan afzonderlijk terug naar `master`; geen force-push of reset van `main` nodig.
