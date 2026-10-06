@@ -12,7 +12,7 @@ cp .env.example .env
 npm run dev
 ```
 
-Vul de echte publieke Supabase-instellingen in `.env` in. Overschrijf een bestaand lokaal `.env`-bestand niet. Open de URL die Nuxt toont, normaal `http://localhost:3000`.
+Vul de echte publieke Supabase-instellingen in `.env` in. Overschrijf een bestaand lokaal `.env`-bestand niet. Open de URL die Nuxt toont, normaal `http://127.0.0.1:3000`. De ontwikkelserver is standaard alleen lokaal bereikbaar en Nuxt Devtools is uitgeschakeld.
 
 | Commando | Doel |
 |---|---|
@@ -64,7 +64,7 @@ De starter leverde Nuxt 4.5.2, Vue 3.5.43 en Vue Router 5.3.1. `package-lock.jso
 
 ## Publicatie en veiligheidsblokkade
 
-De migratie staat voorlopig op `migration/nuxt`. **Productiepublicatie is bewust geblokkeerd** in afwachting van dependencybeoordeling en expliciete vrijgave. De eigenaar heeft de veilige Supabase-grants/RLS en een geslaagde echte testinschrijving inmiddels bevestigd. De huidige live Pages-bron is nog `frontpage`; de standaardbranch is nog `master`.
+De eigenaar heeft de veilige Supabase-grants/RLS en een geslaagde echte testinschrijving bevestigd en expliciet vrijgave gegeven voor `main` en publicatie. De resterende upstreamrisico's in de ontwikkel-/buildketen zijn daarbij geaccepteerd voor deze statische site. Nuxt Devtools staat uit en de ontwikkelserver is standaard beperkt tot localhost. De uitvoeringsstatus en CI-resultaten staan in [`verification.md`](openspec/changes/migrate-landingpage-to-nuxt/verification.md).
 
 `.github/workflows/deploy.yml` bouwt en test migratie-/main-pushes en pull requests. Een pull request of migratiebranch kan nooit publiceren. Publicatie vereist alle volgende voorwaarden:
 
@@ -75,7 +75,7 @@ De migratie staat voorlopig op `migration/nuxt`. **Productiepublicatie is bewust
 
 Controles zonder publieke configuratie bouwen met onbruikbare voorbeeldwaarden; een vrijgegeven productiebuild weigert die waarden. De workflow publiceert alleen `.output/public`, niet de broncode. Het `github-pages`-environment kan aanvullend handmatige goedkeuring vereisen.
 
-De dependency-audit bevat nog upstreammeldingen, waaronder kritieke meldingen in de buildketen. Zie [`verification.md`](openspec/changes/migrate-landingpage-to-nuxt/verification.md) voor de gecontroleerde versies en advisories. Geen ongeteste overrides of geforceerde Nuxt-downgrade toepassen.
+De dependency-audit bevat nog upstreammeldingen, waaronder kritieke meldingen in de buildketen. De vrijgave is een expliciete risicoacceptatie, geen verklaring dat deze kwetsbaarheden verholpen zijn. Zie [`verification.md`](openspec/changes/migrate-landingpage-to-nuxt/verification.md) voor de gecontroleerde versies en advisories. Geen ongeteste overrides of geforceerde Nuxt-downgrade toepassen.
 
 ## Legacy en terugval
 

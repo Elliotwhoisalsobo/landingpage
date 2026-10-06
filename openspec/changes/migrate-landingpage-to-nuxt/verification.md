@@ -54,8 +54,21 @@
 - Zowel het uploaden van de Pages-artifact als de volledige publicatiejob zijn aantoonbaar overgeslagen. Taak 5.2 is daarmee afgerond.
 - De aanvullende lokale `npm run build` schreef `Build complete` in het logbestand, maar de terminalopdracht overschreed de tijdslimiet. Het groene remote CI-resultaat is de bevestigde uitvoeringscontrole voor deze stap.
 
+## Dependencybeoordeling en expliciete vrijgave
+
+- De herhaalde audit van de vastgelegde installatie meldt nog 14 meldingen: 8 hoog en 6 kritiek, inclusief meldingen die door de dependencyketen worden doorgegeven.
+- `simple-git@3.36.0` en `@simple-git/argv-parser@1.1.1` komen via Nuxt Devtools binnen. Beschikbare fixes zijn respectievelijk 4.0.2 en 2.0.1, buiten het bereik van de huidige stabiele Devtools 3.4.2. Geen major override of betaversie geïnstalleerd.
+- `braces@3.0.3` komt via Nitro/globby/micromatch binnen. De advisory betreft stack-uitputting bij diep geneste, aangeleverde globpatronen. De site biedt bezoekers geen interface om build-globpatronen aan te leveren. De laatst gepubliceerde versie blijft 3.0.3.
+- `node-forge@1.4.0` komt via listhen binnen. De advisory betreft RSA-signatuurverificatie. De geobserveerde listhen-aanroepen gebruiken certificaatverwerking voor ontwikkel-HTTPS; de site gebruikt geen eigen Node-HTTPS-server in productie. De laatst gepubliceerde versie blijft 1.4.0.
+- Nuxt 4.6.0 is inmiddels beschikbaar, maar behoudt de relevante stabiele Devtools/Nitro-keten en vereist een nieuwere Node 24-patchversie. Het is daarom niet als oplossing voor deze meldingen gepresenteerd of ongecontroleerd geïnstalleerd.
+- GitHub Pages publiceert alleen `.output/public`, zonder Node-server of `node_modules`. Dit begrenst de publieke runtimeblootstelling, maar neemt risico's tijdens installatie, ontwikkeling en builds niet weg. Geen algemene veiligheidsclaim of automatische onderdrukking van auditmeldingen.
+- De eigenaar koos expliciet **Beperk risico en geef main/publicatie vrij**: resterende builddependencyrisico's zijn voor deze statische site geaccepteerd. Geen vrijgave van database- of productwijzigingen buiten deze migratie.
+- Maatregelen: Nuxt Devtools uitgeschakeld en `npm run dev` bindt standaard aan `127.0.0.1`. CI behoudt minimale tokenrechten, geen productiepublicatie vanuit pull requests en uitsluitend publieke Supabase-variabelen.
+- Na de maatregelen opnieuw geslaagd: typecontrole, mocktests en `npm run build -- --preset github_pages`. De ontwikkelserver is gestart op testpoort 4175: HTTP 200 en de Windows-socketcontrole bevestigt uitsluitend `127.0.0.1:4175`.
+- Bronnen: https://github.com/advisories/GHSA-vfj7-8cjw-p6xm en https://github.com/advisories/GHSA-86w9-cpqp-85rv; pakketversies en afhankelijkheden gecontroleerd via npm-registry en `npm ls`.
+
 ## Nog niet voltooid
-- Taken 6.3–6.4: `main`/standaardbranch, branchbescherming, Pages-omschakeling en live verificatie wachten op vrijgave. Productie blijft op `frontpage`.
+- Taken 6.3–6.4: `main`/standaardbranch, branchbescherming, Pages-omschakeling en live verificatie zijn nu vrijgegeven, maar moeten nog uitgevoerd en geverifieerd worden. Tot de omschakeling blijft productie op `frontpage`.
 
 ## Terugvalprocedure
 
