@@ -40,11 +40,16 @@
 - De oorspronkelijke bronbestanden en ontwerpalternatieven zijn alleen van de migratiebranch verwijderd. Beschikbaarheid op `legacy` gecontroleerd; `pay-transparency-mvp` is ongewijzigd.
 - De build geeft enkele upstreamwaarschuwingen over ontwikkeltools, Windows-modulepaden en een verouderde exportsnotatie. De builds slagen; de afzonderlijke security-audit blijft een vrijgaveblokkade.
 
+## Bevestiging door de eigenaar en voorbereiding van CI
+
+- De eigenaar heeft expliciet bevestigd dat grants/RLS veilig zijn en een echte inschrijving vanuit de Nuxt-versie correct is opgeslagen. Taken 4.4 en 6.2 zijn op basis van die bevestiging afgerond; de agent heeft de database niet zelfstandig gecontroleerd of gewijzigd.
+- De eigenaar gaf toestemming om `migration/nuxt` te pushen en GitHub Actions te controleren, zonder publicatie of wijziging van de standaardbranch.
+- De twee publieke Supabase-repositoryvariabelen zijn vanuit de lokale `.env` ingesteld en via de GitHub API op gelijkheid gecontroleerd. Waarden zijn niet gelogd. De publicatievrijgave `PRODUCTION_RELEASE_APPROVED` is afwezig gebleven.
+- Vóór de CI-run opnieuw bevestigd: standaardbranch `master`, Pages vanaf `frontpage` root `/`, custom domain `lexflow.be`.
+
 ## Nog niet voltooid
 
-- Taak 4.4: bevestiging van grants/RLS door de eigenaar.
-- Taak 5.2: workflow is geschreven en lokaal gecontroleerd, maar echte repositoryvariabelen en een remote CI-run ontbreken nog.
-- Taak 6.2: browser-/mockcontroles zijn afgerond; echte inschrijving en bevestiging van opslag zijn op verzoek uitgesteld.
+- Taak 5.2: repositoryvariabelen staan klaar; de remote CI-run moet nog slagen en bevestigen dat publicatie wordt overgeslagen.
 - Taken 6.3–6.4: `main`/standaardbranch, branchbescherming, Pages-omschakeling en live verificatie wachten op vrijgave. Productie blijft op `frontpage`.
 
 ## Terugvalprocedure

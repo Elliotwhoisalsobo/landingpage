@@ -64,7 +64,7 @@ De starter leverde Nuxt 4.5.2, Vue 3.5.43 en Vue Router 5.3.1. `package-lock.jso
 
 ## Publicatie en veiligheidsblokkade
 
-De migratie staat voorlopig op `migration/nuxt`. **Productiepublicatie is bewust geblokkeerd** in afwachting van dependencybeoordeling, bevestiging van Supabase-grants/RLS en een gecontroleerde echte testinschrijving. De huidige live Pages-bron is nog `frontpage`; de standaardbranch is nog `master`.
+De migratie staat voorlopig op `migration/nuxt`. **Productiepublicatie is bewust geblokkeerd** in afwachting van dependencybeoordeling en expliciete vrijgave. De eigenaar heeft de veilige Supabase-grants/RLS en een geslaagde echte testinschrijving inmiddels bevestigd. De huidige live Pages-bron is nog `frontpage`; de standaardbranch is nog `master`.
 
 `.github/workflows/deploy.yml` bouwt en test migratie-/main-pushes en pull requests. Een pull request of migratiebranch kan nooit publiceren. Publicatie vereist alle volgende voorwaarden:
 

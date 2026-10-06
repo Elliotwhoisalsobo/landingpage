@@ -25,7 +25,7 @@
 - [x] 4.1 Maak `.env.example` en `runtimeConfig.public` voor Supabase; configureer lokale waarden buiten componenten en verifieer dat de geproduceerde site geen `config/supabase-config.js` of `window.SUPABASE_*` meer nodig heeft.
 - [x] 4.2 Migreer het formulier naar Vue-state en een kleine getypeerde wachtlijstfunctie met native `fetch`; verifieer de bestaande payload en meldingen, correcte `apikey`-header, geen publishable key als Bearer-token, behoud van invoer bij fouten en geen dubbele POST tijdens laden.
 - [x] 4.3 Voeg één uitvoerbare Node-test toe en verbind die met `npm test`; laat die daadwerkelijk gebruikte logica controleren voor validatie, optionele bedrijfsnaam, succes, `23505`, overige conflicten, niet-JSON-fouten, netwerkfout en ontbrekende configuratie, zonder live netwerkverkeer.
-- [ ] 4.4 Laat bestaande Supabase-grants/RLS controleren op toegestane inschrijving en ontoegankelijke bestaande gegevens; leg de controle vast en blokkeer publicatie bij onduidelijke/onveilige rechten in plaats van databasewijzigingen stilzwijgend uit te voeren.
+- [x] 4.4 Laat bestaande Supabase-grants/RLS controleren op toegestane inschrijving en ontoegankelijke bestaande gegevens; leg de controle vast en blokkeer publicatie bij onduidelijke/onveilige rechten in plaats van databasewijzigingen stilzwijgend uit te voeren.
 
 ## 5. Build, deployment en documentatie
 
@@ -37,6 +37,6 @@
 ## 6. Eindcontrole en omschakeling
 
 - [x] 6.1 Voer vanuit een schone installatie `npm run typecheck`, `npm test`, `npm run build`, `npm run generate` en de Pages-build uit; noteer resultaten en controleer op ontbrekende configuratie, assets en onverwachte dependencies.
-- [ ] 6.2 Vergelijk legacy en gegenereerde Nuxt-site op mobiel, tablet en desktop; verifieer content/uitlijning, toetsenbordfocus, formulierstatus en foutpaden, bestaande links en een schone browserconsole. Controleer met een afgesproken testadres een echte inschrijving en laat de eigenaar opslag bevestigen.
+- [x] 6.2 Vergelijk legacy en gegenereerde Nuxt-site op mobiel, tablet en desktop; verifieer content/uitlijning, toetsenbordfocus, formulierstatus en foutpaden, bestaande links en een schone browserconsole. Controleer met een afgesproken testadres een echte inschrijving en laat de eigenaar opslag bevestigen.
 - [ ] 6.3 Maak na goedkeuring `main` op de gevalideerde migratiecommit, push zonder force en stel standaardbranch/bescherming/vereiste checks in; verifieer dat `legacy` en bestaande branches intact zijn. Laat ontbrekende beheeracties expliciet door de eigenaar uitvoeren.
 - [ ] 6.4 Zet Pages op Actions, publiceer uitsluitend de gecontroleerde artifact en verifieer op `https://lexflow.be` HTTPS, layout, assets, metadata, analytics en wachtlijst; gebruik bij regressies de vastgelegde terugvalprocedure en markeer de migratie pas na geslaagde live controle voltooid.
