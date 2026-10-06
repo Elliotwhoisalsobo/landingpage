@@ -47,9 +47,14 @@
 - De twee publieke Supabase-repositoryvariabelen zijn vanuit de lokale `.env` ingesteld en via de GitHub API op gelijkheid gecontroleerd. Waarden zijn niet gelogd. De publicatievrijgave `PRODUCTION_RELEASE_APPROVED` is afwezig gebleven.
 - Vóór de CI-run opnieuw bevestigd: standaardbranch `master`, Pages vanaf `frontpage` root `/`, custom domain `lexflow.be`.
 
-## Nog niet voltooid
+## GitHub CI geslaagd
 
-- Taak 5.2: repositoryvariabelen staan klaar; de remote CI-run moet nog slagen en bevestigen dat publicatie wordt overgeslagen.
+- `migration/nuxt` is gepusht met commit `e43b7410693c05169e1bf7e07efc55999e874a4c`.
+- GitHub Actions-run [37447723055](https://github.com/Elliotwhoisalsobo/landingpage/actions/runs/37447723055) is succesvol afgerond: `npm ci`, typecontrole, mocktests, Pages-build en controle van de statische uitvoer slagen op de Linux-runner.
+- Zowel het uploaden van de Pages-artifact als de volledige publicatiejob zijn aantoonbaar overgeslagen. Taak 5.2 is daarmee afgerond.
+- De aanvullende lokale `npm run build` schreef `Build complete` in het logbestand, maar de terminalopdracht overschreed de tijdslimiet. Het groene remote CI-resultaat is de bevestigde uitvoeringscontrole voor deze stap.
+
+## Nog niet voltooid
 - Taken 6.3–6.4: `main`/standaardbranch, branchbescherming, Pages-omschakeling en live verificatie wachten op vrijgave. Productie blijft op `frontpage`.
 
 ## Terugvalprocedure

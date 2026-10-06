@@ -30,7 +30,7 @@
 ## 5. Build, deployment en documentatie
 
 - [x] 5.1 Voeg `public/CNAME` en `public/.nojekyll` toe en bouw met `npm run build -- --preset github_pages`; verifieer domeinbestanden, HTML en assets in `.output/public` met base URL `/`.
-- [ ] 5.2 Maak een GitHub Actions-workflow met npm-ci, typecontrole, tests, Pages-build en artifactpublicatie; stel publieke configuratie expliciet in, beperk productiepublicatie tot `main`, gebruik minimale Pages/OIDC-rechten en deploymentconcurrency, en verifieer dat een migratie-/PR-run alleen controles uitvoert.
+- [x] 5.2 Maak een GitHub Actions-workflow met npm-ci, typecontrole, tests, Pages-build en artifactpublicatie; stel publieke configuratie expliciet in, beperk productiepublicatie tot `main`, gebruik minimale Pages/OIDC-rechten en deploymentconcurrency, en verifieer dat een migratie-/PR-run alleen controles uitvoert.
 - [x] 5.3 Werk README bij met starterherkomst, Node-versie, npm-commando's, afzonderlijke configuratie, statische herbouw en terugvalprocedure; controleer dat verwijzingen naar demo-localStorage en handmatige configscriptdeployment verdwenen zijn.
 - [x] 5.4 Verwijder uitsluitend de vervangen root-HTML/JS/CSS/configbestanden, oude ontwerpalternatieven en uitgeschakelde popupcode uit de nieuwe branch; controleer dat zij via `legacy` beschikbaar blijven en dat `openspec/changes/pay-transparency-mvp/` ongewijzigd is.
 
