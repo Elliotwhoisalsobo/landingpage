@@ -1,6 +1,15 @@
+# Nuxt en lokale configuratie
+node_modules/
+.nuxt/
+.output/
+dist/
+.nuxt-starter-tmp/
+.env
+.env.*
+!.env.example
+*.log
 
-
-# Stray directory (per ongeluk aangemaakt)
+# Onbedoeld aangemaakte map
 -p/
 
 # Agent/editor metadata — specifiek voor lokale ontwikkelomgeving

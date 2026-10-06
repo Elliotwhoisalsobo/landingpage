@@ -1,0 +1,63 @@
+name: Controle en publicatie
+
+on:
+  push:
+    branches: [main, migration/nuxt]
+  pull_request:
+    branches: [main, migration/nuxt]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Typecontrole, tests en statische build
+    runs-on: ubuntu-latest
+    env:
+      NUXT_PUBLIC_SUPABASE_URL: ${{ vars.NUXT_PUBLIC_SUPABASE_URL || 'https://voorbeeld.supabase.co' }}
+      NUXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: ${{ vars.NUXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY || 'sb_publishable_ci' }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - name: Controleer configuratie voor publicatie
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && vars.PRODUCTION_RELEASE_APPROVED == 'true'
+        run: |
+          if [[ "$NUXT_PUBLIC_SUPABASE_URL" == "https://voorbeeld.supabase.co" || "$NUXT_PUBLIC_SUPABASE_URL" != https://* || "$NUXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY" == "sb_publishable_ci" || "$NUXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY" != sb_publishable_* ]]; then
+            echo "Geldige publieke Supabase-configuratie ontbreekt."
+            exit 1
+          fi
+      - run: npm run build -- --preset github_pages
+      - name: Controleer statische uitvoer
+        run: |
+          test -f .output/public/index.html
+          test -f .output/public/.nojekyll
+          grep -qx "lexflow.be" .output/public/CNAME
+      - uses: actions/upload-pages-artifact@v4
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && vars.PRODUCTION_RELEASE_APPROVED == 'true'
+        with:
+          path: .output/public
+
+  deploy:
+    name: Publiceer op GitHub Pages
+    needs: build
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && vars.PRODUCTION_RELEASE_APPROVED == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    concurrency:
+      group: github-pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment

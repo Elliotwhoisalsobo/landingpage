@@ -69,6 +69,8 @@ Geen extra layout voor één pagina. De branch `feature/product-paginas` wordt n
 
 Verplaats de actieve CSS en inline formulierstyles naar `app/assets/css/main.css`, geladen via Nuxt-configuratie. Behoud CSS-variabelen, lettertypen, breekpunten, reduced-motion-regels en de huidige uitlijning. Geen omzetting naar utilityklassen of CSS-preprocessor. Houd de eerste migratie bij één stylesheet om onbedoelde cascadeveranderingen te vermijden.
 
+Tijdens de browsercontrole bleek dat de legacy-kaarten op mobiel tekst afsnijden. De gebruiker heeft een minimale correctie goedgekeurd: onder 761px krijgen context- en productkaarten één kolom en mogen lange kaarttitels afbreken. Desktop blijft gelijk; dit is geen algemeen redesign.
+
 Behoud de huidige Phosphor-webstylesheet; geen extra icoonpakket nodig. Vervang het hand-emoji in de gemigreerde makercomponent door een bestaand Phosphor-handicoon of verwijder het dubbele decoratieve icoon. Herstel zichtbare toetsenbordfocus op de formuliervelden, behoud labels en live-statusmeldingen.
 
 ### 4. Supabase-configuratie apart, integratie minimaal
