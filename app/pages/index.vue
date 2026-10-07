@@ -39,10 +39,12 @@ useHead({ link: [{ rel: "canonical", href: "https://lexflow.be/" }] });
         verplichtingen en dure boetes met zich mee. LexFlow helpt KMO's om voorbereid
         te zijn zonder dure consultants of complexe software.
       </p>
-      <WaitlistForm />
-      <ContextCards />
-      <ProductShowcase />
-      <AboutBo />
+
+      <WaitlistForm/>
+      <ContextCards/>
+      <ProductShowcase/>
+      <AboutBo/>
+
     </section>
   </main>
 </template>
