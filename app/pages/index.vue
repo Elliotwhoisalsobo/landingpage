@@ -1,12 +1,13 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: "LexFlow | Loontransparantie en ziekteverzuim voor KMO's",
+  title: "LexFlow Loontransparantie en ziekteverzuim voor KMO's",
   description: "LexFlow bouwt aan software voor loontransparantie, opvolging van langdurige afwezigheid en re-integratie.",
 });
 useHead({ link: [{ rel: "canonical", href: "https://lexflow.be/" }] });
 </script>
 
 <template>
+  <!-- BACKGROUND ART -->
   <main class="page-shell">
     <div class="background-layer" aria-hidden="true">
       <div class="paper-noise"></div>
@@ -22,14 +23,14 @@ useHead({ link: [{ rel: "canonical", href: "https://lexflow.be/" }] });
         <span>RE-INTEGRATIE</span>
       </div>
     </div>
-
+    <!-- LOGO & NAME -->
     <header class="site-header container">
       <a class="brand" href="#" aria-label="LexFlow startpagina">
         <span class="brand-mark" aria-hidden="true">L</span>
         <span class="brand-name">LEXFLOW</span>
       </a>
     </header>
-
+    <!-- WEBSITE TITLE -->
     <section class="hero container" aria-labelledby="hero-title">
       <h1 id="hero-title" class="hero-title--compact">
         HR-compliance wordt <em>ingewikkelder</em><span>LexFlow maakt het <em>simpel</em></span>
@@ -37,12 +38,15 @@ useHead({ link: [{ rel: "canonical", href: "https://lexflow.be/" }] });
       <p class="hero-copy">
         Nieuwe Europese regels rond loontransparantie brengen extra
         verplichtingen en dure boetes met zich mee. LexFlow helpt KMO's om voorbereid
-        te zijn zonder dure consultants of complexe software.
+        te zijn.
       </p>
-      <WaitlistForm />
-      <ContextCards />
-      <ProductShowcase />
-      <AboutBo />
+
+      <!-- COMPONENTS -->
+      <WaitlistForm/>
+      <ContextCards/>
+      <ProductShowcase/>
+      <AboutBo/>
+
     </section>
   </main>
 </template>
