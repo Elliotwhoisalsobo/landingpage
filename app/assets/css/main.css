@@ -421,6 +421,15 @@ h1 em {
 
 }
 
+.hero-title--compact {
+  font-size: clamp(3rem, 5.8vw, 5.3rem);
+}
+
+.hero-title--compact span {
+  display: block;
+  margin-top: 0.16em;
+}
+
 .hero-copy {
 
   max-width: 720px;

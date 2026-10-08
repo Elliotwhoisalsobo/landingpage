@@ -8,7 +8,7 @@
           Ik bouw LexFlow om twee complexe HR-uitdagingen eenvoudiger te maken: loontransparantie en de opvolging van ziekteverzuim en langdurige afwezigheid.
         </p>
         <p>
-          Mijn doel is praktische, betaalbare software waarmee KMO's overzicht houden, deadlines bewaken en correct handelen — zonder dure consultants of ingewikkelde systemen.
+          Mijn doel is praktische, betaalbare software ontwerpen waarmee KMO's overzicht houden, deadlines bewaken en correct handelen zonder dure consultants of ingewikkelde systemen.
         </p>
         <p class="maker-linkedin">
           <a href="https://www.linkedin.com/in/bo-vermote/" target="_blank" rel="noopener noreferrer">

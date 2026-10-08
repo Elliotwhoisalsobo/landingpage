@@ -56,7 +56,7 @@ async function submit() {
 <template>
   <form id="waitlist-form" class="waitlist-form company-email-inline" novalidate :aria-busy="busy" @submit.prevent="submit">
     <label class="sr-only" for="company">Bedrijf</label>
-    <label class="sr-only" for="email">E-mailadres</label>
+    <label class="sr-only" for="email">Email</label>
     <div class="company-email-row">
       <div class="company-email-field company-field">
         <i class="ph ph-buildings field-icon" aria-hidden="true"></i>
@@ -82,7 +82,7 @@ async function submit() {
           type="email"
           autocomplete="email"
           inputmode="email"
-          placeholder="Werk e-mailadres"
+          placeholder="E-mail"
           aria-describedby="form-message"
           :aria-invalid="emailInvalid"
           :disabled="busy"
@@ -226,7 +226,7 @@ input[type="email"]::placeholder {
   grid-template-columns: minmax(170px, 0.78fr) minmax(230px, 1.15fr) auto;
   align-items: stretch;
   overflow: hidden;
-  padding: 4px;
+  padding: 0;
   border: 1px solid rgba(10, 59, 48, 0.14);
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.78);
@@ -238,6 +238,7 @@ input[type="email"]::placeholder {
   display: flex;
   align-items: center;
   min-width: 0;
+  padding: 4px 0;
   background: transparent;
 }
 
@@ -267,13 +268,14 @@ input[type="email"]::placeholder {
   color: #74867f;
 }
 
-.company-email-field input:focus-visible {
+.company-email-field:focus-within {
   outline: 2px solid var(--green);
   outline-offset: -3px;
 }
 
 .company-email-inline .submit-button {
   min-width: 220px;
+  margin: 4px;
   border-radius: 11px;
 }
 
