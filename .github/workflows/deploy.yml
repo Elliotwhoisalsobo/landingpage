@@ -15,6 +15,7 @@ jobs:
     name: Typecontrole, tests en statische build
     runs-on: ubuntu-latest
     env:
+      # NOT USED YET / WILL CONVERT TO SUPABASE EVENTUALLY
       NUXT_PUBLIC_SUPABASE_URL: ${{ vars.NUXT_PUBLIC_SUPABASE_URL || 'https://voorbeeld.supabase.co' }}
       NUXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: ${{ vars.NUXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY || 'sb_publishable_ci' }}
     steps:

@@ -269,8 +269,11 @@ input[type="email"]::placeholder {
 }
 
 .company-email-field:focus-within {
-  outline: 2px solid var(--green);
-  outline-offset: -3px;
+  box-shadow: inset 0 0 0 2px var(--green);
+}
+
+.company-field:focus-within {
+  border-radius: 13px 0 0 13px;
 }
 
 .company-email-inline .submit-button {
