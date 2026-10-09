@@ -159,40 +159,6 @@
   line-height: 1.58;
 }
 
-.route-uitkomst {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: start;
-  gap: 12px;
-  margin: 0 28px 28px;
-  padding: 18px;
-  border-radius: 12px;
-  color: var(--ink);
-  background: var(--green-muted);
-}
-
-.route-uitkomst .ph {
-  margin-top: 2px;
-  color: var(--green);
-  font-size: 1.2rem;
-}
-
-.route-uitkomst strong,
-.route-uitkomst span {
-  display: block;
-}
-
-.route-uitkomst strong {
-  margin-bottom: 3px;
-  font-size: 0.84rem;
-}
-
-.route-uitkomst span {
-  color: var(--ink-soft);
-  font-size: 0.8rem;
-  line-height: 1.5;
-}
-
 .sectie-icoon {
   display: grid;
   width: 48px;

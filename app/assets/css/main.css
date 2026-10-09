@@ -8,8 +8,6 @@
 
   --green: #0d5e49;
 
-  --green-deep: #074737;
-
   --green-muted: #dce8e2;
 
   --paper: #f5f1e8;
@@ -326,44 +324,6 @@ button {
 
 }
 
-.status-pill {
-
-  display: inline-flex;
-
-  align-items: center;
-
-  gap: 10px;
-
-  padding: 9px 15px;
-
-  border: 1px solid rgba(10, 59, 48, 0.12);
-
-  border-radius: 999px;
-
-  color: #365d52;
-
-  background: rgba(255, 255, 255, 0.36);
-
-  backdrop-filter: blur(8px);
-
-  font-size: 0.84rem;
-
-}
-
-.status-dot {
-
-  width: 8px;
-
-  height: 8px;
-
-  border-radius: 50%;
-
-  background: #267760;
-
-  box-shadow: 0 0 0 4px rgba(38, 119, 96, 0.08);
-
-}
-
 .hero {
 
   display: flex;
@@ -374,20 +334,6 @@ button {
   text-align: center;
   padding-top: clamp(72px, 10vh, 118px);
   padding-bottom: 72px;
-
-}
-
-.eyebrow {
-
-  margin: 0;
-
-  color: #2c6859;
-
-  font-size: 0.76rem;
-
-  font-weight: 600;
-
-  letter-spacing: 0.34em;
 
 }
 
@@ -524,27 +470,11 @@ h1 em {
 
   }
 
-  .status-pill {
-
-    padding: 8px 11px;
-
-    font-size: 0.76rem;
-
-  }
-
   .hero {
 
     padding-top: 76px;
 
     padding-bottom: 40px;
-
-  }
-
-  .eyebrow {
-
-    font-size: 0.68rem;
-
-    letter-spacing: 0.24em;
 
   }
 
@@ -562,32 +492,9 @@ h1 em {
 
   }
 
-  .curve-a {
-
-    left: -520px;
-
-  }
-
-  .curve-b {
-
-    right: -560px;
-
-  }
-
-  .curve-b-mirror,
-  .curve-c-mirror {
-    display: none;
-  }
-
 }
 
 @media (max-width: 480px) {
-
-  .status-pill {
-
-    max-width: 132px;
-
-  }
 
   h1 {
 

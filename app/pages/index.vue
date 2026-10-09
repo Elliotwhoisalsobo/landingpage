@@ -49,7 +49,7 @@ useHead({ link: [{ rel: "canonical", href: "https://lexflow.be/" }] });
 
     </section>
 
-        <footer class="site-footer container">
+    <footer class="site-footer container">
       <a href="#" class="footer-link">Privacybeleid</a>
       <span class="footer-copy">&copy; 2026 LexFlow</span>
     </footer>

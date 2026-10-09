@@ -60,11 +60,6 @@
   color: var(--ink);
 }
 
-.maker-text h2 em {
-  display: inline;
-  font-style: italic;
-}
-
 .maker-text p {
   margin: 0 0 12px;
   color: var(--ink-soft);
