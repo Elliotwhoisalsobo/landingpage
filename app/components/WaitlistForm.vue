@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { isValidEmail, submitSignup } from "~/utils/waitlist";
+import { submitSignup } from "~/utils/waitlist";
 
 const config = useRuntimeConfig();
 const email = ref("");
@@ -7,30 +7,10 @@ const company = ref("");
 const busy = ref(false);
 const message = ref("");
 const isError = ref(false);
-const emailInvalid = ref(false);
-const messageClasses = computed(() => ({
-  "is-visible": Boolean(message.value),
-  "is-error": isError.value,
-  "is-success": !isError.value,
-}));
-const emailInput = useTemplateRef<HTMLInputElement>("emailInput");
-
-function clearMessage() {
-  message.value = "";
-  emailInvalid.value = false;
-}
 
 async function submit() {
   if (busy.value) return;
-  clearMessage();
-  if (!isValidEmail(email.value)) {
-    message.value = "Vul een geldig e-mailadres in.";
-    isError.value = true;
-    emailInvalid.value = true;
-    emailInput.value?.focus();
-    return;
-  }
-
+  message.value = "";
   busy.value = true;
   try {
     const result = await submitSignup(config.public, email.value, company.value);
@@ -44,9 +24,7 @@ async function submit() {
     }
   } catch {
     isError.value = true;
-    message.value = !config.public.supabaseUrl || !config.public.supabasePublishableKey
-      ? "Inschrijven is momenteel niet beschikbaar. Probeer het later opnieuw."
-      : "Dat lukte niet. Probeer het later opnieuw.";
+    message.value = "Dat lukte niet. Probeer het later opnieuw.";
   } finally {
     busy.value = false;
   }
@@ -54,7 +32,7 @@ async function submit() {
 </script>
 
 <template>
-  <form id="waitlist-form" class="waitlist-form" novalidate :aria-busy="busy" @submit.prevent="submit">
+  <form id="waitlist-form" class="waitlist-form" :aria-busy="busy" @submit.prevent="submit">
     <label class="sr-only" for="company">Bedrijf</label>
     <label class="sr-only" for="email">Email</label>
     <div class="company-email-row">
@@ -69,25 +47,25 @@ async function submit() {
           placeholder="Bedrijf"
           aria-describedby="form-message"
           :disabled="busy"
-          @input="clearMessage"
+          @input="message = ''"
         />
       </div>
       <div class="company-email-field email-field">
         <i class="ph ph-envelope field-icon" aria-hidden="true"></i>
         <input
           id="email"
-          ref="emailInput"
           v-model="email"
           name="email"
           type="email"
           autocomplete="email"
           inputmode="email"
+          pattern="[^\s@]+@[^\s@]+\.[^\s@]{2,}"
+          title="Vul een geldig e-mailadres in."
           placeholder="E-mail"
           aria-describedby="form-message"
-          :aria-invalid="emailInvalid"
           :disabled="busy"
           required
-          @input="clearMessage"
+          @input="message = ''"
         />
       </div>
       <button type="submit" class="submit-button" :disabled="busy">
@@ -96,9 +74,10 @@ async function submit() {
       </button>
     </div>
     <p
+      v-if="message"
       id="form-message"
       class="form-message"
-      :class="messageClasses"
+      :class="{ 'is-error': isError }"
       role="status"
       aria-live="polite"
     >{{ message }}</p>
@@ -151,22 +130,13 @@ async function submit() {
 }
 
 .form-message {
-  display: none;
   margin: 26px 0 0;
-  color: #6c7d77;
+  color: #21654f;
   font-size: 0.79rem;
-}
-
-.form-message.is-visible {
-  display: block;
 }
 
 .form-message.is-error {
   color: #944839;
-}
-
-.form-message.is-success {
-  color: #21654f;
 }
 
 .company-email-row {
