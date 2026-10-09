@@ -4,6 +4,7 @@ useSeoMeta({
   description: "LexFlow bouwt aan software voor loontransparantie, opvolging van langdurige afwezigheid en re-integratie.",
 });
 useHead({ link: [{ rel: "canonical", href: "https://lexflow.be/" }] });
+import LexFlowFlowDiagram from '@/components/LexFlowFlowDiagram.vue'
 </script>
 
 <template>
@@ -46,7 +47,14 @@ useHead({ link: [{ rel: "canonical", href: "https://lexflow.be/" }] });
       <ContextCards/>
       <ProductShowcase/>
       <AboutBo/>
+      
+      <LexFlowFlowDiagram/>
 
     </section>
+
+    <footer class="site-footer container">
+      <a href="#" class="footer-link">Privacybeleid</a>
+      <span class="footer-copy">&copy; 2026 LexFlow</span>
+    </footer>
   </main>
 </template>
