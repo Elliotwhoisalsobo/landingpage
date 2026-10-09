@@ -149,7 +149,6 @@ async function submit() {
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.78);
   box-shadow: 0 14px 34px rgba(31, 62, 51, 0.07);
-  backdrop-filter: blur(10px);
 }
 
 .company-email-field {
