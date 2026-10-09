@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { isValidEmail, submitSignup } from "~/utils/waitlist";
+import { submitSignup } from "~/utils/waitlist";
 
 const config = useRuntimeConfig();
 const email = ref("");
@@ -7,30 +7,10 @@ const company = ref("");
 const busy = ref(false);
 const message = ref("");
 const isError = ref(false);
-const emailInvalid = ref(false);
-const messageClasses = computed(() => ({
-  "is-visible": Boolean(message.value),
-  "is-error": isError.value,
-  "is-success": !isError.value,
-}));
-const emailInput = useTemplateRef<HTMLInputElement>("emailInput");
-
-function clearMessage() {
-  message.value = "";
-  emailInvalid.value = false;
-}
 
 async function submit() {
   if (busy.value) return;
-  clearMessage();
-  if (!isValidEmail(email.value)) {
-    message.value = "Vul een geldig e-mailadres in.";
-    isError.value = true;
-    emailInvalid.value = true;
-    emailInput.value?.focus();
-    return;
-  }
-
+  message.value = "";
   busy.value = true;
   try {
     const result = await submitSignup(config.public, email.value, company.value);
@@ -44,9 +24,7 @@ async function submit() {
     }
   } catch {
     isError.value = true;
-    message.value = !config.public.supabaseUrl || !config.public.supabasePublishableKey
-      ? "Inschrijven is momenteel niet beschikbaar. Probeer het later opnieuw."
-      : "Dat lukte niet. Probeer het later opnieuw.";
+    message.value = "Dat lukte niet. Probeer het later opnieuw.";
   } finally {
     busy.value = false;
   }
@@ -54,7 +32,7 @@ async function submit() {
 </script>
 
 <template>
-  <form id="waitlist-form" class="waitlist-form company-email-inline" novalidate :aria-busy="busy" @submit.prevent="submit">
+  <form id="waitlist-form" class="waitlist-form" :aria-busy="busy" @submit.prevent="submit">
     <label class="sr-only" for="company">Bedrijf</label>
     <label class="sr-only" for="email">Email</label>
     <div class="company-email-row">
@@ -69,25 +47,25 @@ async function submit() {
           placeholder="Bedrijf"
           aria-describedby="form-message"
           :disabled="busy"
-          @input="clearMessage"
+          @input="message = ''"
         />
       </div>
       <div class="company-email-field email-field">
         <i class="ph ph-envelope field-icon" aria-hidden="true"></i>
         <input
           id="email"
-          ref="emailInput"
           v-model="email"
           name="email"
           type="email"
           autocomplete="email"
           inputmode="email"
+          pattern="[^\s@]+@[^\s@]+\.[^\s@]{2,}"
+          title="Vul een geldig e-mailadres in."
           placeholder="E-mail"
           aria-describedby="form-message"
-          :aria-invalid="emailInvalid"
           :disabled="busy"
           required
-          @input="clearMessage"
+          @input="message = ''"
         />
       </div>
       <button type="submit" class="submit-button" :disabled="busy">
@@ -96,9 +74,10 @@ async function submit() {
       </button>
     </div>
     <p
+      v-if="message"
       id="form-message"
       class="form-message"
-      :class="messageClasses"
+      :class="{ 'is-error': isError }"
       role="status"
       aria-live="polite"
     >{{ message }}</p>
@@ -107,53 +86,8 @@ async function submit() {
 
 <style scoped>
 .waitlist-form {
-  width: min(670px, 100%);
+  width: min(860px, 100%);
   margin-top: 26px;
-}
-
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  overflow: hidden;
-  padding: 4px;
-  border: 1px solid rgba(10, 59, 48, 0.14);
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.78);
-  box-shadow: 0 14px 34px rgba(31, 62, 51, 0.07);
-  backdrop-filter: blur(10px);
-}
-
-.input-wrap {
-  display: flex;
-  align-items: center;
-  min-width: 0;
-}
-
-.input-wrap:focus-within {
-  outline: 3px solid rgba(34, 118, 93, 0.2);
-  outline-offset: -2px;
-}
-
-.mail-icon {
-  font-size: 18px;
-  line-height: 1;
-  margin-left: 16px;
-  flex: 0 0 auto;
-  color: #6d817a;
-}
-
-input[type="email"] {
-  width: 100%;
-  min-width: 0;
-  border: 0;
-  outline: 0;
-  padding: 17px 16px;
-  color: var(--ink);
-  background: transparent;
-}
-
-input[type="email"]::placeholder {
-  color: #74867f;
 }
 
 .submit-button {
@@ -161,7 +95,8 @@ input[type="email"]::placeholder {
   align-items: center;
   justify-content: center;
   gap: 13px;
-  min-width: 228px;
+  min-width: 220px;
+  margin: 4px;
   border: 0;
   border-radius: 11px;
   padding: 0 22px;
@@ -194,31 +129,14 @@ input[type="email"]::placeholder {
   line-height: 1;
 }
 
-.form-note,
 .form-message {
   margin: 26px 0 0;
-  color: #6c7d77;
+  color: #21654f;
   font-size: 0.79rem;
-}
-
-.form-message {
-  display: none;
-}
-
-.form-message.is-visible {
-  display: block;
 }
 
 .form-message.is-error {
   color: #944839;
-}
-
-.form-message.is-success {
-  color: #21654f;
-}
-
-.company-email-inline {
-  width: min(860px, 100%);
 }
 
 .company-email-row {
@@ -231,7 +149,6 @@ input[type="email"]::placeholder {
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.78);
   box-shadow: 0 14px 34px rgba(31, 62, 51, 0.07);
-  backdrop-filter: blur(10px);
 }
 
 .company-email-field {
@@ -276,12 +193,6 @@ input[type="email"]::placeholder {
   border-radius: 13px 0 0 13px;
 }
 
-.company-email-inline .submit-button {
-  min-width: 220px;
-  margin: 4px;
-  border-radius: 11px;
-}
-
 @media (max-width: 820px) {
   .company-email-row {
     grid-template-columns: 1fr;
@@ -294,22 +205,6 @@ input[type="email"]::placeholder {
 
   .company-email-field.email-field {
     border-bottom: 1px solid rgba(10, 59, 48, 0.10);
-  }
-
-  .company-email-inline .submit-button {
-    width: 100%;
-    min-height: 56px;
-  }
-}
-
-@media (max-width: 760px) {
-  .form-row {
-    grid-template-columns: 1fr;
-    gap: 4px;
-  }
-
-  .input-wrap {
-    min-height: 58px;
   }
 
   .submit-button {

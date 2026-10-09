@@ -18,7 +18,6 @@
           <li><i class="ph ph-check-circle" aria-hidden="true"></i> Genereer met één klik het rapport dat voldoet aan de Europese richtlijn</li>
           <li><i class="ph ph-check-circle" aria-hidden="true"></i> Bewaar alle bewijsstukken en historiek op één centrale plek</li>
         </ul>
-        <!-- <span class="card-cta">Meer info</span> -->
       </article>
 
       <article class="product-card">
@@ -32,7 +31,6 @@
           <li><i class="ph ph-check-circle" aria-hidden="true"></i> Bereid re-integratiegesprekken voor met ingebouwde checklists — geen losse mails meer</li>
           <li><i class="ph ph-check-circle" aria-hidden="true"></i> Werk samen met HR, leidinggevende en externen in één gedeeld dossier</li>
         </ul>
-        <!-- <span class="card-cta">Meer info</span> -->
       </article>
     </div>
   </div>
@@ -47,15 +45,6 @@
 
 .showcase-header {
   margin-bottom: 36px;
-}
-
-.showcase-label {
-  display: inline-block;
-  margin: 0;
-  color: #2c6859;
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.34em;
 }
 
 .showcase-title {
@@ -144,13 +133,6 @@
   color: var(--ink);
 }
 
-.card-desc {
-  margin: 0 0 16px;
-  color: var(--ink-soft);
-  font-size: 0.81rem;
-  line-height: 1.55;
-}
-
 .card-features {
   margin: 0;
   padding: 0;
@@ -187,25 +169,6 @@
   font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.4;
-}
-
-.card-cta {
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin-top: auto;
-  padding: 8px 0;
-  color: var(--ink-soft);
-  font-size: 0.78rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  opacity: 0.6;
-  transition: opacity 220ms ease, color 220ms ease;
-}
-
-.product-card:hover .card-cta {
-  opacity: 1;
-  color: var(--green);
 }
 
 @media (max-width: 760px) {

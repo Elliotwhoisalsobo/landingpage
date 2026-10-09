@@ -26,7 +26,7 @@ Vul de echte publieke Supabase-instellingen in `.env` in. Overschrijf een bestaa
 
 ## Configuratie
 
-Configuratie blijft apart van de componenten in `.env`:
+Voor lokale ontwikkeling blijft configuratie apart van de componenten in `.env`:
 
 ```dotenv
 NUXT_PUBLIC_SUPABASE_URL="https://jouw-project.supabase.co"
@@ -69,7 +69,7 @@ De Nuxt-site draait op **https://lexflow.be** via GitHub Actions vanaf de besche
 `.github/workflows/deploy.yml` bouwt en test migratie-/main-pushes en pull requests. Een pull request of migratiebranch kan nooit publiceren. Publicatie vereist alle volgende voorwaarden:
 
 1. Een geslaagde build op `main`, niet vanuit een pull request.
-2. Geldige GitHub Actions-repositoryvariabelen `NUXT_PUBLIC_SUPABASE_URL` en `NUXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`.
+2. Geldige GitHub Actions-repositorysecrets `SUPABASE_URL` en `SUPABASE_PUBLISHABLE_KEY`; de workflow geeft deze tijdens de build door als Nuxt `NUXT_PUBLIC_*`-variabelen.
 3. Expliciete vrijgave via repositoryvariabele `PRODUCTION_RELEASE_APPROVED=true` nadat bovenstaande controles zijn afgerond. Laat deze variabele tot dan weg.
 4. Pages ingesteld op **GitHub Actions**, met custom domain `lexflow.be` en HTTPS. De website gebruikt base URL `/`.
 
