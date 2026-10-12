@@ -45,6 +45,7 @@ useHead({ link: [{ rel: "canonical", href: "https://lexflow.be/" }] });
       <WaitlistForm/>
       <ContextCards/>
       <ProductShowcase/>
+      <Steps/>
       <AboutBo/>
 
     </section>
