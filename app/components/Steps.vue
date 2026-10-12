@@ -123,6 +123,13 @@ const steps = [
   background: rgba(255, 255, 255, 0.78);
   box-shadow: 0 8px 24px rgba(33, 56, 47, 0.035);
   text-align: left;
+  transition: transform 220ms ease, box-shadow 220ms ease, background 220ms ease;
+}
+
+.step-card:hover {
+  transform: translateY(-3px);
+  background: #fff;
+  box-shadow: 0 14px 36px -8px rgba(33, 56, 47, 0.14);
 }
 
 .step-number {
