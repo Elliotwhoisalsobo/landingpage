@@ -2,21 +2,21 @@
 const steps = [
   {
     number: "1",
-    title: "Laat je gegevens achter",
+    title: "Vraag uw scan aan",
     description:
-      "Vul je bedrijfsnaam en email in om je interesse te tonen.",
+      "Vul uw kantoor en e-mail in. Wij draaien de scan manueel — geen live-scan, geen open kraan.",
   },
   {
     number: "2",
-    title: "Vertel ons wat je nodig hebt",
+    title: "Ontvang uw memo",
     description:
-      "We plannen een simpel gesprek waarbij we luisteren naar je uitdagingen.",
+      "Vandaag staat een persoonlijke PDF in uw inbox: wat AI antwoordt, waarom, en wat er moet veranderen.",
   },
   {
     number: "3",
-    title: "Word designpartner",
+    title: "Kies uw volgende stap",
     description:
-      "Test onze applicatie en geef feedback.",
+      "Geef de memo aan uw webbouwer, of laat ons de acties uitvoeren — allebei eerlijk.",
   },
 ];
 </script>
@@ -25,8 +25,8 @@ const steps = [
   <section class="lexflow-steps" aria-labelledby="steps-title">
     <div class="steps-container">
       <header class="steps-header">
-        <h2 id="steps-title">Bouw mee aan LexFlow.</h2>
-        <p>We zoeken kleine KMO’s die hun ervaring en problemen willen delen.</p>
+        <h2 id="steps-title">Van aanvraag tot memo.</h2>
+        <p>Drie stappen, geen software om aan te raken — de memo verschijnt in uw inbox.</p>
       </header>
 
       <ol class="steps-grid">
