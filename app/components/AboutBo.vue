@@ -5,10 +5,10 @@
       <div class="maker-text">
         <h2 id="maker-titel">Hoi, ik ben Bo</h2>
         <p>
-          Ik bouw LexFlow om AI-zichtbaarheid eenvoudiger te maken voor Belgische advocatenkantoren: wat AI over u zegt, waarom, en wat u concreet moet veranderen.
+          Ik breng uw advocatenkantoor naar de top: ik kijk wat AI over u zegt, begrijp waarom de concurrent wint, en werk met u een plan uit om dat te keren.
         </p>
         <p>
-          Mijn doel is een eerlijke, persoonlijke memo — geen dashboard met jargon. Zodat u weet waar u staat, zonder tech-kennis of dure consultants.
+          Geen percentages, geen jargon, geen verplichting. Een eerlijk advies in gewone taal, en de concrete stappen die uw kantoor zichtbaar maken — zonder dat u computerkennis of dure consultants nodig hebt.
         </p>
         <p class="maker-linkedin">
           <a href="https://www.linkedin.com/in/bo-vermote/" target="_blank" rel="noopener noreferrer">
