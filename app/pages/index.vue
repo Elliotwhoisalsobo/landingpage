@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: "LexFlow — AI-zichtbaarheid voor Belgische advocaten",
-  description: "LexFlow meet wat AI over uw advocatenkantoor zegt, legt het uit in gewone taal en maakt concreet wat er moet veranderen — zonder tech-kennis.",
+  title: "LexVind — AI-zichtbaarheid voor Belgische advocaten",
+  description: "LexVind meet wat AI over uw advocatenkantoor zegt, legt het uit in gewone taal en maakt concreet wat er moet veranderen — zonder tech-kennis.",
 });
 useHead({ link: [{ rel: "canonical", href: "https://lexvind.be/" }] });
 </script>
@@ -25,19 +25,19 @@ useHead({ link: [{ rel: "canonical", href: "https://lexvind.be/" }] });
     </div>
     <!-- LOGO & NAME -->
     <header class="site-header container">
-      <a class="brand" href="#" aria-label="LexFlow — AI-zichtbaarheid voor advocaten">
+      <a class="brand" href="#" aria-label="LexVind — AI-zichtbaarheid voor advocaten">
         <span class="brand-mark" aria-hidden="true">L</span>
-        <span class="brand-name">LEXFLOW</span>
+        <span class="brand-name">LEXVIND</span>
       </a>
     </header>
     <!-- WEBSITE TITLE -->
     <section class="hero container" aria-labelledby="hero-title">
       <h1 id="hero-title" class="hero-title--compact">
-        De cliënt vraagt <em>AI</em> om een advocaat<span>LexFlow zet u in het <em>antwoord</em></span>
+        De cliënt vraagt <em>AI</em> om een advocaat<span>LexVind zet u in het <em>antwoord</em></span>
       </h1>
       <p class="hero-copy">
         Tegen de tijd dat een cliënt u belt, heeft hij AI al om de beste advocaat
-        gevraagd. Vaak staat een concurrent in het antwoord, niet u. LexFlow laat zien
+        gevraagd. Vaak staat een concurrent in het antwoord, niet u. LexVind laat zien
         wat AI over uw kantoor zegt — in gewone taal, met concrete acties.
       </p>
 
@@ -52,7 +52,7 @@ useHead({ link: [{ rel: "canonical", href: "https://lexvind.be/" }] });
 
     <footer class="site-footer container">
       <a href="#" class="footer-link">Privacybeleid</a>
-      <span class="footer-copy">&copy; 2026 LexFlow</span>
+      <span class="footer-copy">&copy; 2026 LexVind</span>
     </footer>
   </main>
 </template>

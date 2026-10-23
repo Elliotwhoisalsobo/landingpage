@@ -1,8 +1,4 @@
-<p align="center">
-  <img src="docs/lexflow-logo.svg" alt="LexFlow-logo" width="420">
-</p>
-
-<h1 align="center">LexFlow landingpage</h1>
+<h1 align="center">LexVind landingpage</h1>
 
 Nuxt 4 / Vue 3-landingspagina voor **loontransparantie**, **ziekteverzuim**, **langdurige afwezigheid** en **re-integratie**. Gewone CSS, strikte TypeScript en Phosphor-iconen; geen Tailwind of UI-framework.
 
