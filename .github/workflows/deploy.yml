@@ -38,7 +38,7 @@ jobs:
         run: |
           test -f .output/public/index.html
           test -f .output/public/.nojekyll
-          grep -qx "lexflow.be" .output/public/CNAME
+          grep -qx "lexvind.be" .output/public/CNAME
       - uses: actions/upload-pages-artifact@v4
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && vars.PRODUCTION_RELEASE_APPROVED == 'true'
         with:
