@@ -1,35 +1,35 @@
 <template>
   <div class="product-showcase">
     <header class="showcase-header">
-      <h2 class="showcase-title">Twee producten, <em>één missie.</em></h2>
+      <h2 class="showcase-title">Twee eerlijke stappen, <em>één missie.</em></h2>
       <p class="showcase-copy">
-        LexFlow brengt twee praktische modules naar uw KMO.
+        LexFlow levert één ding: een persoonlijke memo over uw AI-zichtbaarheid. De scan is gratis, de opvolging eerlijk — geen dashboard, geen verborgen kosten.
       </p>
     </header>
     <div class="card-grid">
       <article class="product-card">
-        <div class="card-badge">In ontwikkeling</div>
-        <div class="card-icon" aria-hidden="true"><i class="ph ph-file-text"></i></div>
-        <h3 class="card-title">Loontransparantie</h3>
-        <p class="card-subtitle">Voor KMO's die loonverschillen willen begrijpen én uitleggen. <strong>Vermijd boetes.</strong></p>
+        <div class="card-badge">Gratis</div>
+        <div class="card-icon" aria-hidden="true"><i class="ph ph-magnifying-glass"></i></div>
+        <h3 class="card-title">De gratis scan</h3>
+        <p class="card-subtitle">Voor advocaten die willen weten wat AI over hen zegt. <strong>Vraag uw memo aan.</strong></p>
         <ul class="card-features">
-          <li><i class="ph ph-check-circle" aria-hidden="true"></i> Upload je functielijst en loondata — LexFlow detecteert risicovolle afwijkingen</li>
-          <li><i class="ph ph-check-circle" aria-hidden="true"></i> Documenteer objectieve verklaringen per verschil (anciënniteit, ervaring, marktomstandigheden)</li>
-          <li><i class="ph ph-check-circle" aria-hidden="true"></i> Genereer met één klik het rapport dat voldoet aan de Europese richtlijn</li>
-          <li><i class="ph ph-check-circle" aria-hidden="true"></i> Bewaar alle bewijsstukken en historiek op één centrale plek</li>
+          <li><i class="ph ph-check-circle" aria-hidden="true"></i> Vul uw kantoor, gemeente en specialisme in — wij draaien de scan manueel</li>
+          <li><i class="ph ph-check-circle" aria-hidden="true"></i> Geen live-scan en geen open kraan: één persoonlijke aanvraag, geen misbruik</li>
+          <li><i class="ph ph-check-circle" aria-hidden="true"></i> Wij stellen ~30 Belgische koper-vragen aan AI over uw specialisme en stad</li>
+          <li><i class="ph ph-check-circle" aria-hidden="true"></i> Vandaag ontvangt u de memo in uw inbox — u raakt nooit software aan</li>
         </ul>
       </article>
 
       <article class="product-card">
-        <div class="card-badge">Toekomst</div>
-        <div class="card-icon" aria-hidden="true"><i class="ph ph-users"></i></div>
-        <h3 class="card-title">Langdurige afwezigheid</h3>
-        <p class="card-subtitle">Voor KMO's die langdurig zieke medewerkers actief willen opvolgen. <strong>Verlaag de kost.</strong></p>
+        <div class="card-badge">Optioneel</div>
+        <div class="card-icon" aria-hidden="true"><i class="ph ph-file-text"></i></div>
+        <h3 class="card-title">De opvolging</h3>
+        <p class="card-subtitle">Voor advocaten die de aanbevelingen ook uitgevoerd willen zien. <strong>Bewijs de winst.</strong></p>
         <ul class="card-features">
-          <li><i class="ph ph-check-circle" aria-hidden="true"></i> Krijg een helder overzicht van elk dossier: wie, hoe lang, wat is de volgende stap</li>
-          <li><i class="ph ph-check-circle" aria-hidden="true"></i> Ontvang automatische herinneringen wanneer een verplichte termijn nadert</li>
-          <li><i class="ph ph-check-circle" aria-hidden="true"></i> Bereid re-integratiegesprekken voor met ingebouwde checklists — geen losse mails meer</li>
-          <li><i class="ph ph-check-circle" aria-hidden="true"></i> Werk samen met HR, leidinggevende en externen in één gedeeld dossier</li>
+          <li><i class="ph ph-check-circle" aria-hidden="true"></i> Wij voeren de acties uit: site-content, directories en structured data tegen vaste prijs</li>
+          <li><i class="ph ph-check-circle" aria-hidden="true"></i> Na 6 weken meten we opnieuw — voor/na naast elkaar als bewijs, geen percentages</li>
+          <li><i class="ph ph-check-circle" aria-hidden="true"></i> Alles binnen de balie-regels: geen vergelijkende claims, geen fora-bemiddeling</li>
+          <li><i class="ph ph-check-circle" aria-hidden="true"></i> Twee eerlijke opties: geef de memo aan uw webbouwer, of laat ons het uitvoeren</li>
         </ul>
       </article>
     </div>

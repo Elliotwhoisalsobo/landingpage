@@ -1,30 +1,30 @@
 <template>
-  <section class="route-raster" aria-label="Gevolgen van loontransparantie en stijgend verzuim">
+  <section class="route-raster" aria-label="Wat AI beslist voor uw kantoor en waarom generieke tools falen">
     <article class="routekaart">
       <header class="routekop">
-        <span class="sectie-icoon" aria-hidden="true"><i class="ph ph-scales"></i></span>
+        <span class="sectie-icoon" aria-hidden="true"><i class="ph ph-robot"></i></span>
         <div>
-          <h2>EU-richtlijn loontransparantie</h2>
-          <p>Meer openheid over hoe lonen worden bepaald.</p>
+          <h2>Wat AI antwoordt als iemand een advocaat zoekt</h2>
+          <p>Letterlijke AI-antwoorden, met concurrenten gemarkeerd.</p>
         </div>
       </header>
       <ol class="routestappen">
         <li class="routestap">
           <div>
             <h3>De aanleiding</h3>
-            <p>Europa wil ongerechtvaardigde loonverschillen beter zichtbaar maken en aanpakken.</p>
+            <p>Een potentiële cliënt vraagt AI om de beste advocaat in zijn stad. AI geeft een kort lijstje.</p>
           </div>
         </li>
         <li class="routestap">
           <div>
-            <h3>Het werk voor HR</h3>
-            <p>Vergelijkbare functies groeperen, loonverschillen analyseren en objectieve verklaringen vastleggen.</p>
+            <h3>Wat AI kiest</h3>
+            <p>Vaak staat een concurrent in dat lijstje, niet uw kantoor — nog vóór de cliënt ooit op uw website belandt.</p>
           </div>
         </li>
         <li class="routestap">
           <div>
             <h3>Het risico zonder overzicht</h3>
-            <p>Bij een vraag of klacht kost het veel tijd om de juiste cijfers, criteria en bewijsstukken terug te vinden.</p>
+            <p>U weet niet wat AI over u zegt, en dus ook niet waarom de cliënt de concurrent belde.</p>
           </div>
         </li>
       </ol>
@@ -32,29 +32,29 @@
 
     <article class="routekaart">
       <header class="routekop">
-        <span class="sectie-icoon" aria-hidden="true"><i class="ph ph-trend-up"></i></span>
+        <span class="sectie-icoon" aria-hidden="true"><i class="ph ph-gauge"></i></span>
         <div>
-          <h2>Stijgend verzuim en nieuwe regels</h2>
-          <p>Meer nood aan vroege en consequente opvolging.</p>
+          <h2>Waarom generieke tools niet werken voor advocaten</h2>
+          <p>Gebouwd voor SaaS-marketeers, niet voor een advocaat zonder tech-kennis.</p>
         </div>
       </header>
       <ol class="routestappen">
         <li class="routestap">
           <div>
             <h3>De aanleiding</h3>
-            <p>Langdurige afwezigheid neemt toe en brengt menselijke, organisatorische en financiële gevolgen mee.</p>
+            <p>Bestaande AEO-tools leveren dashboards met percentages en jargon dat een advocaat niet vertaalt naar actie.</p>
           </div>
         </li>
         <li class="routestap">
           <div>
-            <h3>Het werk voor HR</h3>
-            <p>Contact houden, deadlines bewaken, afspraken registreren en mogelijkheden tot terugkeer onderzoeken.</p>
+            <h3>Wat u eigenlijk nodig hebt</h3>
+            <p>Letterlijke AI-antwoorden, bewijs per bevinding en concrete stappen in gewone taal — geen dashboard.</p>
           </div>
         </li>
         <li class="routestap">
           <div>
             <h3>Het risico zonder overzicht</h3>
-            <p>Dossiers vallen stil, acties worden vergeten en betrokkenen werken met verschillende informatie.</p>
+            <p>Bovendien schenden veel tactieken de balie-regels; wat voor SaaS werkt, is voor advocaten een deontologisch risico.</p>
           </div>
         </li>
       </ol>

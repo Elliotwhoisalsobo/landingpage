@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: "LexFlow Loontransparantie en ziekteverzuim voor KMO's",
-  description: "LexFlow bouwt aan software voor loontransparantie, opvolging van langdurige afwezigheid en re-integratie.",
+  title: "LexFlow — AI-zichtbaarheid voor Belgische advocaten",
+  description: "LexFlow meet wat AI over uw advocatenkantoor zegt, legt het uit in gewone taal en maakt concreet wat er moet veranderen — zonder tech-kennis.",
 });
 useHead({ link: [{ rel: "canonical", href: "https://lexvind.be/" }] });
 </script>
@@ -14,18 +14,18 @@ useHead({ link: [{ rel: "canonical", href: "https://lexvind.be/" }] });
       <div class="spiral spiral-1"></div>
       <div class="spiral spiral-2"></div>
       <div class="edge-card edge-card-left">
-        <span>VERMIJD BOETES</span>
+        <span>WEES ZICHTBAAR</span>
         <span>KRIJG OVERZICHT</span>
       </div>
       <div class="edge-card edge-card-right">
-        <span>LOONTRANSPARANTIE</span>
-        <span>ZIEKTE</span>
-        <span>RE-INTEGRATIE</span>
+        <span>AI-ANTWOORDEN</span>
+        <span>ADVOCATEN</span>
+        <span>MEMO</span>
       </div>
     </div>
     <!-- LOGO & NAME -->
     <header class="site-header container">
-      <a class="brand" href="#" aria-label="LexFlow startpagina">
+      <a class="brand" href="#" aria-label="LexFlow — AI-zichtbaarheid voor advocaten">
         <span class="brand-mark" aria-hidden="true">L</span>
         <span class="brand-name">LEXFLOW</span>
       </a>
@@ -33,12 +33,12 @@ useHead({ link: [{ rel: "canonical", href: "https://lexvind.be/" }] });
     <!-- WEBSITE TITLE -->
     <section class="hero container" aria-labelledby="hero-title">
       <h1 id="hero-title" class="hero-title--compact">
-        HR-compliance wordt <em>ingewikkelder</em><span>LexFlow maakt het <em>simpel</em></span>
+        De cliënt vraagt <em>AI</em> om een advocaat<span>LexFlow zet u in het <em>antwoord</em></span>
       </h1>
       <p class="hero-copy">
-        Nieuwe Europese regels rond loontransparantie brengen extra
-        verplichtingen en dure boetes met zich mee. LexFlow helpt KMO's om voorbereid
-        te zijn.
+        Tegen de tijd dat een cliënt u belt, heeft hij AI al om de beste advocaat
+        gevraagd. Vaak staat een concurrent in het antwoord, niet u. LexFlow laat zien
+        wat AI over uw kantoor zegt — in gewone taal, met concrete acties.
       </p>
 
       <!-- COMPONENTS -->
