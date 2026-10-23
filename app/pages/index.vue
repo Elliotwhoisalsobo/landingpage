@@ -3,7 +3,7 @@ useSeoMeta({
   title: "LexFlow — AI-zichtbaarheid voor Belgische advocaten",
   description: "LexFlow meet wat AI over uw advocatenkantoor zegt, legt het uit in gewone taal en maakt concreet wat er moet veranderen — zonder tech-kennis.",
 });
-useHead({ link: [{ rel: "canonical", href: "https://lexflow.be/" }] });
+useHead({ link: [{ rel: "canonical", href: "https://lexvind.be/" }] });
 </script>
 
 <template>
