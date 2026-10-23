@@ -16,8 +16,8 @@ async function submit() {
     const result = await submitSignup(config.public, email.value, company.value);
     isError.value = false;
     message.value = result === "existing"
-      ? "U staat al op de lijst."
-      : "Bedankt. We houden u op de hoogte zodra LexFlow meer kan tonen.";
+      ? "U heeft al een scan aangevraagd."
+      : "Bedankt. We draaien uw scan manueel en sturen de memo vandaag naar uw inbox.";
     if (result === "created") {
       email.value = "";
       company.value = "";
@@ -33,7 +33,7 @@ async function submit() {
 
 <template>
   <form id="waitlist-form" class="waitlist-form" :aria-busy="busy" @submit.prevent="submit">
-    <label class="sr-only" for="company">Bedrijf</label>
+    <label class="sr-only" for="company">Kantoor</label>
     <label class="sr-only" for="email">Email</label>
     <div class="company-email-row">
       <div class="company-email-field company-field">
@@ -44,7 +44,7 @@ async function submit() {
           name="company"
           type="text"
           autocomplete="organization"
-          placeholder="Bedrijf"
+          placeholder="Kantoor"
           aria-describedby="form-message"
           :disabled="busy"
           @input="message = ''"
@@ -69,7 +69,7 @@ async function submit() {
         />
       </div>
       <button type="submit" class="submit-button" :disabled="busy">
-        <span>{{ busy ? "Even verwerken..." : "Ik heb interesse" }}</span>
+        <span>{{ busy ? "Even verwerken..." : "Vraag mijn gratis scan" }}</span>
         <i class="ph ph-arrow-right" aria-hidden="true"></i>
       </button>
     </div>

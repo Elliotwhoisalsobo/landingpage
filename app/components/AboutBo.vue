@@ -5,10 +5,10 @@
       <div class="maker-text">
         <h2 id="maker-titel">Hoi, ik ben Bo</h2>
         <p>
-          Ik bouw LexFlow om twee complexe HR-uitdagingen eenvoudiger te maken: loontransparantie en de opvolging van ziekteverzuim en langdurige afwezigheid.
+          Ik bouw LexFlow om AI-zichtbaarheid eenvoudiger te maken voor Belgische advocatenkantoren: wat AI over u zegt, waarom, en wat u concreet moet veranderen.
         </p>
         <p>
-          Mijn doel is praktische, betaalbare software ontwerpen waarmee KMO's overzicht houden, deadlines bewaken en correct handelen zonder dure consultants of ingewikkelde systemen.
+          Mijn doel is een eerlijke, persoonlijke memo — geen dashboard met jargon. Zodat u weet waar u staat, zonder tech-kennis of dure consultants.
         </p>
         <p class="maker-linkedin">
           <a href="https://www.linkedin.com/in/bo-vermote/" target="_blank" rel="noopener noreferrer">
