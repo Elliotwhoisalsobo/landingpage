@@ -3,7 +3,7 @@ useSeoMeta({
   title: "LexFlow Loontransparantie en ziekteverzuim voor KMO's",
   description: "LexFlow bouwt aan software voor loontransparantie, opvolging van langdurige afwezigheid en re-integratie.",
 });
-useHead({ link: [{ rel: "canonical", href: "https://lexflow.be/" }] });
+useHead({ link: [{ rel: "canonical", href: "https://lexvind.be/" }] });
 </script>
 
 <template>
