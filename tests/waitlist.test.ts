@@ -30,10 +30,10 @@ test("wachtlijst valideert invoer en verwerkt API-antwoorden zonder echt netwerk
   await assert.rejects(submitSignup({ ...config, supabaseUrl: "ongeldig" }, "bo@voorbeeld.be", ""));
   assert.equal(requests.length, 0);
 
-  assert.equal(await submitSignup(config, " bo@voorbeeld.be ", " LexFlow "), "created");
+  assert.equal(await submitSignup(config, " bo@voorbeeld.be ", " LexVind "), "created");
   assert.equal(requests[0]?.url, "https://voorbeeld.supabase.co/rest/v1/email_list");
   assert.equal(requests[0]?.options?.method, "POST");
-  assert.deepEqual(JSON.parse(String(requests[0]?.options?.body)), { email: "bo@voorbeeld.be", company: "LexFlow" });
+  assert.deepEqual(JSON.parse(String(requests[0]?.options?.body)), { email: "bo@voorbeeld.be", company: "LexVind" });
   const headers = new Headers(requests[0]?.options?.headers);
   assert.equal(headers.get("apikey"), config.supabasePublishableKey);
   assert.equal(headers.get("Content-Type"), "application/json");

@@ -22,7 +22,7 @@ const steps = [
 </script>
 
 <template>
-  <section class="lexflow-steps" aria-labelledby="steps-title">
+  <section class="lexvind-steps" aria-labelledby="steps-title">
     <div class="steps-container">
       <header class="steps-header">
         <h2 id="steps-title">Van aanvraag tot memo.</h2>
@@ -50,7 +50,7 @@ const steps = [
 </template>
 
 <style scoped>
-.lexflow-steps {
+.lexvind-steps {
   --step-gap: clamp(28px, 4vw, 40px);
 
   width: min(900px, 100%);
@@ -171,7 +171,7 @@ const steps = [
 }
 
 @media (max-width: 760px) {
-  .lexflow-steps {
+  .lexvind-steps {
     --step-gap: 24px;
   }
 

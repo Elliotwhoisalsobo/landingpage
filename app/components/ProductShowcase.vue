@@ -3,7 +3,7 @@
     <header class="showcase-header">
       <h2 class="showcase-title">Twee eerlijke stappen, <em>één missie.</em></h2>
       <p class="showcase-copy">
-        LexFlow levert één ding: een persoonlijke memo over uw AI-zichtbaarheid. De scan is gratis, de opvolging eerlijk — geen dashboard, geen verborgen kosten.
+        LexVind levert één ding: een persoonlijke memo over uw AI-zichtbaarheid. De scan is gratis, de opvolging eerlijk — geen dashboard, geen verborgen kosten.
       </p>
     </header>
     <div class="card-grid">

@@ -5,7 +5,7 @@
       <div class="maker-text">
         <h2 id="maker-titel">Hoi, ik ben Bo</h2>
         <p>
-          Ik bouw LexFlow om AI-zichtbaarheid eenvoudiger te maken voor Belgische advocatenkantoren: wat AI over u zegt, waarom, en wat u concreet moet veranderen.
+          Ik bouw LexVind om AI-zichtbaarheid eenvoudiger te maken voor Belgische advocatenkantoren: wat AI over u zegt, waarom, en wat u concreet moet veranderen.
         </p>
         <p>
           Mijn doel is een eerlijke, persoonlijke memo — geen dashboard met jargon. Zodat u weet waar u staat, zonder tech-kennis of dure consultants.
