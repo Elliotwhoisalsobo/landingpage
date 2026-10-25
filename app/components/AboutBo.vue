@@ -8,7 +8,7 @@
           Ik bouw LexVind om AI-zichtbaarheid eenvoudiger te maken voor Belgische advocatenkantoren: wat AI over u zegt, waarom, en wat u concreet moet veranderen.
         </p>
         <p>
-          Mijn doel is een eerlijke, persoonlijke memo — geen dashboard met jargon. Zodat u weet waar u staat, zonder tech-kennis of dure consultants.
+          Mijn doel is een eerlijke, persoonlijke memo - geen dashboard met jargon. Zodat u weet waar u staat, zonder tech-kennis of dure consultants.
         </p>
         <p class="maker-linkedin">
           <a href="https://www.linkedin.com/in/bo-vermote/" target="_blank" rel="noopener noreferrer">

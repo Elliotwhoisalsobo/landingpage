@@ -3,7 +3,7 @@
     <header class="showcase-header">
       <h2 class="showcase-title">Twee eerlijke stappen, <em>één missie.</em></h2>
       <p class="showcase-copy">
-        LexVind levert één ding: een persoonlijke memo over uw AI-zichtbaarheid. De scan is gratis, de opvolging eerlijk — geen dashboard, geen verborgen kosten.
+        LexVind levert één ding: een persoonlijke memo over uw AI-zichtbaarheid. De scan is gratis, de opvolging eerlijk - geen dashboard, geen verborgen kosten.
       </p>
     </header>
     <div class="card-grid">
@@ -13,10 +13,10 @@
         <h3 class="card-title">De gratis scan</h3>
         <p class="card-subtitle">Voor advocaten die willen weten wat AI over hen zegt. <strong>Vraag uw memo aan.</strong></p>
         <ul class="card-features">
-          <li><i class="ph ph-check-circle" aria-hidden="true"></i> Vul uw kantoor, gemeente en specialisme in — wij draaien de scan manueel</li>
+          <li><i class="ph ph-check-circle" aria-hidden="true"></i> Vul uw kantoor, gemeente en specialisme in - wij draaien de scan manueel</li>
           <li><i class="ph ph-check-circle" aria-hidden="true"></i> Geen live-scan en geen open kraan: één persoonlijke aanvraag, geen misbruik</li>
           <li><i class="ph ph-check-circle" aria-hidden="true"></i> Wij stellen ~30 Belgische koper-vragen aan AI over uw specialisme en stad</li>
-          <li><i class="ph ph-check-circle" aria-hidden="true"></i> Vandaag ontvangt u de memo in uw inbox — u raakt nooit software aan</li>
+          <li><i class="ph ph-check-circle" aria-hidden="true"></i> Vandaag ontvangt u de memo in uw inbox - u raakt nooit software aan</li>
         </ul>
       </article>
 
@@ -27,7 +27,7 @@
         <p class="card-subtitle">Voor advocaten die de aanbevelingen ook uitgevoerd willen zien. <strong>Bewijs de winst.</strong></p>
         <ul class="card-features">
           <li><i class="ph ph-check-circle" aria-hidden="true"></i> Wij voeren de acties uit: site-content, directories en structured data tegen vaste prijs</li>
-          <li><i class="ph ph-check-circle" aria-hidden="true"></i> Na 6 weken meten we opnieuw — voor/na naast elkaar als bewijs, geen percentages</li>
+          <li><i class="ph ph-check-circle" aria-hidden="true"></i> Na 6 weken meten we opnieuw - voor/na naast elkaar als bewijs, geen percentages</li>
           <li><i class="ph ph-check-circle" aria-hidden="true"></i> Alles binnen de balie-regels: geen vergelijkende claims, geen fora-bemiddeling</li>
           <li><i class="ph ph-check-circle" aria-hidden="true"></i> Twee eerlijke opties: geef de memo aan uw webbouwer, of laat ons het uitvoeren</li>
         </ul>
