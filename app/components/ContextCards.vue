@@ -4,27 +4,27 @@
       <header class="routekop">
         <span class="sectie-icoon" aria-hidden="true"><i class="ph ph-robot"></i></span>
         <div>
-          <h2>Wat AI antwoordt als iemand een advocaat zoekt</h2>
-          <p>Letterlijke AI-antwoorden, met concurrenten gemarkeerd.</p>
+          <h2>Wat de cliënt te lezen krijgt van AI</h2>
+          <p>Het antwoord dat de keuze bepaalt, met concurrenten gemarkeerd.</p>
         </div>
       </header>
       <ol class="routestappen">
         <li class="routestap">
           <div>
             <h3>De aanleiding</h3>
-            <p>Een potentiële cliënt vraagt AI om de beste advocaat in zijn stad. AI geeft een kort lijstje.</p>
+            <p>Voor de cliënt u ooit belt, heeft hij AI al om een advocaat gevraagd. AI antwoordt met een namenlijstje.</p>
           </div>
         </li>
         <li class="routestap">
           <div>
             <h3>Wat AI kiest</h3>
-            <p>Vaak staat een concurrent in dat lijstje, niet uw kantoor — nog vóór de cliënt ooit op uw website belandt.</p>
+            <p>Wie bovenaan staat, bepaalt AI - op basis van wat online over u te vinden is, niet op basis van uw kunde.</p>
           </div>
         </li>
         <li class="routestap">
           <div>
             <h3>Het risico zonder overzicht</h3>
-            <p>U weet niet wat AI over u zegt, en dus ook niet waarom de cliënt de concurrent belde.</p>
+            <p>Zonder te weten wat AI over u zegt, probeert u cliënten te winnen die allang bij een concurrent zitten.</p>
           </div>
         </li>
       </ol>
@@ -34,27 +34,27 @@
       <header class="routekop">
         <span class="sectie-icoon" aria-hidden="true"><i class="ph ph-gauge"></i></span>
         <div>
-          <h2>Waarom generieke tools niet werken voor advocaten</h2>
-          <p>Gebouwd voor SaaS-marketeers, niet voor een advocaat zonder tech-kennis.</p>
+          <h2>Waarom klassieke marketing de cliënt niet meer bereikt</h2>
+          <p>Gemaakt voor wie zelf zoekt - niet voor wie AI om advies vraagt.</p>
         </div>
       </header>
       <ol class="routestappen">
         <li class="routestap">
           <div>
             <h3>De aanleiding</h3>
-            <p>Bestaande AEO-tools leveren dashboards met percentages en jargon dat een advocaat niet vertaalt naar actie.</p>
+            <p>Advertenties en SEO bereiken wie actief zoekt; de cliënt vraagt vandaag één ding aan AI en krijgt één antwoord.</p>
           </div>
         </li>
         <li class="routestap">
           <div>
             <h3>Wat u eigenlijk nodig hebt</h3>
-            <p>Letterlijke AI-antwoorden, bewijs per bevinding en concrete stappen in gewone taal — geen dashboard.</p>
+            <p>Een plek in dat ene AI-antwoord - geen hogere positie op Google.</p>
           </div>
         </li>
         <li class="routestap">
           <div>
             <h3>Het risico zonder overzicht</h3>
-            <p>Bovendien schenden veel tactieken de balie-regels; wat voor SaaS werkt, is voor advocaten een deontologisch risico.</p>
+            <p>U meet kliks en bezoekers, terwijl de echte beslissing plaatsvindt waar u niet meet.</p>
           </div>
         </li>
       </ol>

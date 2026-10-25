@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: "LexVind — AI-zichtbaarheid voor Belgische advocaten",
-  description: "LexVind meet wat AI over uw advocatenkantoor zegt, legt het uit in gewone taal en maakt concreet wat er moet veranderen — zonder tech-kennis.",
+  title: "LexVind - AI-zichtbaarheid voor Belgische advocaten",
+  description: "LexVind meet wat AI over uw advocatenkantoor zegt, legt het uit in gewone taal en maakt concreet wat er moet veranderen - zonder tech-kennis.",
 });
 useHead({ link: [{ rel: "canonical", href: "https://lexvind.be/" }] });
 </script>
@@ -25,7 +25,7 @@ useHead({ link: [{ rel: "canonical", href: "https://lexvind.be/" }] });
     </div>
     <!-- LOGO & NAME -->
     <header class="site-header container">
-      <a class="brand" href="#" aria-label="LexVind — AI-zichtbaarheid voor advocaten">
+      <a class="brand" href="#" aria-label="LexVind - AI-zichtbaarheid voor advocaten">
         <span class="brand-mark" aria-hidden="true">L</span>
         <span class="brand-name">LEXVIND</span>
       </a>
@@ -38,7 +38,7 @@ useHead({ link: [{ rel: "canonical", href: "https://lexvind.be/" }] });
       <p class="hero-copy">
         Tegen de tijd dat een cliënt u belt, heeft hij AI al om de beste advocaat
         gevraagd. Vaak staat een concurrent in het antwoord, niet u. LexVind laat zien
-        wat AI over uw kantoor zegt — in gewone taal, met concrete acties.
+        wat AI over uw kantoor zegt - in gewone taal, met concrete acties.
       </p>
 
       <!-- COMPONENTS -->
@@ -51,7 +51,7 @@ useHead({ link: [{ rel: "canonical", href: "https://lexvind.be/" }] });
     </section>
 
     <footer class="site-footer container">
-      <a href="#" class="footer-link">Privacybeleid</a>
+      <NuxtLink to="/privacy" class="footer-link">Privacybeleid</NuxtLink>
       <span class="footer-copy">&copy; 2026 LexVind</span>
     </footer>
   </main>
