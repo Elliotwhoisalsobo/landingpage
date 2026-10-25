@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: "LexFlow — AI-zichtbaarheid voor Belgische advocaten",
-  description: "LexFlow meet wat AI over uw advocatenkantoor zegt, legt het uit in gewone taal en maakt concreet wat er moet veranderen — zonder tech-kennis.",
+  title: "LexFlow - AI-zichtbaarheid voor Belgische advocaten",
+  description: "LexFlow meet wat AI over uw advocatenkantoor zegt, legt het uit in gewone taal en maakt concreet wat er moet veranderen - zonder tech-kennis.",
 });
 useHead({ link: [{ rel: "canonical", href: "https://lexflow.be/" }] });
 </script>
@@ -25,7 +25,7 @@ useHead({ link: [{ rel: "canonical", href: "https://lexflow.be/" }] });
     </div>
     <!-- LOGO & NAME -->
     <header class="site-header container">
-      <a class="brand" href="#" aria-label="LexFlow — AI-zichtbaarheid voor advocaten">
+      <a class="brand" href="#" aria-label="LexFlow - AI-zichtbaarheid voor advocaten">
         <span class="brand-mark" aria-hidden="true">L</span>
         <span class="brand-name">LEXFLOW</span>
       </a>
@@ -38,7 +38,7 @@ useHead({ link: [{ rel: "canonical", href: "https://lexflow.be/" }] });
       <p class="hero-copy">
         Tegen de tijd dat een cliënt u belt, heeft hij AI al om de beste advocaat
         gevraagd. Vaak staat een concurrent in het antwoord, niet u. LexFlow laat zien
-        wat AI over uw kantoor zegt — in gewone taal, met concrete acties.
+        wat AI over uw kantoor zegt - in gewone taal, met concrete acties.
       </p>
 
       <!-- COMPONENTS -->

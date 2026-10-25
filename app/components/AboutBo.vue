@@ -8,7 +8,7 @@
           Ik breng uw advocatenkantoor naar de top: ik kijk wat AI over u zegt, begrijp waarom de concurrent wint, en werk met u een plan uit om dat te keren.
         </p>
         <p>
-          Geen percentages, geen jargon, geen verplichting. Een eerlijk advies in gewone taal, en de concrete stappen die uw kantoor zichtbaar maken — zonder dat u computerkennis of dure consultants nodig hebt.
+          Geen percentages, geen jargon, geen verplichting. Een eerlijk advies in gewone taal, en de concrete stappen die uw kantoor zichtbaar maken - zonder dat u computerkennis of dure consultants nodig hebt.
         </p>
         <p class="maker-linkedin">
           <a href="https://www.linkedin.com/in/bo-vermote/" target="_blank" rel="noopener noreferrer">

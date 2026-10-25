@@ -18,7 +18,7 @@
         <li class="routestap">
           <div>
             <h3>Wat AI kiest</h3>
-            <p>Wie bovenaan staat, bepaalt AI — op basis van wat online over u te vinden is, niet op basis van uw kunde.</p>
+            <p>Wie bovenaan staat, bepaalt AI - op basis van wat online over u te vinden is, niet op basis van uw kunde.</p>
           </div>
         </li>
         <li class="routestap">
@@ -35,7 +35,7 @@
         <span class="sectie-icoon" aria-hidden="true"><i class="ph ph-gauge"></i></span>
         <div>
           <h2>Waarom klassieke marketing de cliënt niet meer bereikt</h2>
-          <p>Gemaakt voor wie zelf zoekt — niet voor wie AI om advies vraagt.</p>
+          <p>Gemaakt voor wie zelf zoekt - niet voor wie AI om advies vraagt.</p>
         </div>
       </header>
       <ol class="routestappen">
@@ -48,7 +48,7 @@
         <li class="routestap">
           <div>
             <h3>Wat u eigenlijk nodig hebt</h3>
-            <p>Een plek in dat ene AI-antwoord — geen hogere positie op Google.</p>
+            <p>Een plek in dat ene AI-antwoord - geen hogere positie op Google.</p>
           </div>
         </li>
         <li class="routestap">

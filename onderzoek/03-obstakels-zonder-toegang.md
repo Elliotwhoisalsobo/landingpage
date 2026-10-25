@@ -1,8 +1,8 @@
-# 03 — Obstakels: waarde zonder site-toegang
+# 03 - Obstakels: waarde zonder site-toegang
 
 > Veel advocatenkantoren hebben een verouderde, "bevroren" website: geen CMS-toegang, een onbereikbare webhost, of geen budget om de site aan te raken. Wat levert LexFlow dan concreet op?
 
-De papers (GEO/CORE) werken op **elke tekst die de engine ophaalt** — niet alleen de eigen site. Dat opent vijf waarde-paden die geen site-wijziging vereisen.
+De papers (GEO/CORE) werken op **elke tekst die de engine ophaalt** - niet alleen de eigen site. Dat opent vijf waarde-paden die geen site-wijziging vereisen.
 
 ## Het inzicht dat alles draait
 
@@ -25,10 +25,10 @@ Je hoeft niet de eigen site te beheersen om de **som** te beïnvloeden. Dat is d
 
 Platforms die de advocaat wél beheert (of kan beïnvloeden), terwijl de eigen site vastzit:
 
-- **LinkedIn-profiel** — de eigenaar kan dit zelf aanpassen. Voeg GEO-methodes toe: vaktermen, specialisme-zin, heldere taal, bronvermeldingen.
-- **Google Business Profile** — gratis, eigenaar-beheerd, lokaal sterk in retrieval.
-- **Balie-register / orde van advocaten** — controleer of de vermelding klopt en volledig is.
-- **Juridische directories** — profielen waar ze al op staan aanvullen.
+- **LinkedIn-profiel** - de eigenaar kan dit zelf aanpassen. Voeg GEO-methodes toe: vaktermen, specialisme-zin, heldere taal, bronvermeldingen.
+- **Google Business Profile** - gratis, eigenaar-beheerd, lokaal sterk in retrieval.
+- **Balie-register / orde van advocaten** - controleer of de vermelding klopt en volledig is.
+- **Juridische directories** - profielen waar ze al op staan aanvullen.
 
 GEO + CORE-methodes zijn hier direct toepasbaar. Dit is de snelste win bij een bevroren site.
 
@@ -47,7 +47,7 @@ Dit creëert nieuwe retrieval-bronnen die de synthese voeden.
 CORE's review-based content bewijst dat beoordelingen/referenties de ranking sterk beïnvloeden. Voor advocaten:
 
 - Gestructureerde referenties/cliëntgetuigenissen op platforms die de engine ophaalt.
-- **Deontologische grens:** geen vergelijkende claims, geen "beste/snelste/goedkoopste", geen succespercentages — wel feitelijke beschrijving van het specialisme en de aanpak.
+- **Deontologische grens:** geen vergelijkende claims, geen "beste/snelste/goedkoopste", geen succespercentages - wel feitelijke beschrijving van het specialisme en de aanpak.
 - De waarde zit in *aanwezigheid* van gestructureerde, vlotte referentie-tekst, niet in opschepperij.
 
 ### 4. Audit-waarde zonder uitvoering

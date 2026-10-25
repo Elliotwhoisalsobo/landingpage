@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: "Privacybeleid — LexFlow",
+  title: "Privacybeleid - LexFlow",
   description: "Welke gegevens LexFlow verzamelt via het wachtlijstformulier, waarom, bij wie ze worden verwerkt en hoe u uw rechten uitoefent.",
 });
 useHead({ link: [{ rel: "canonical", href: "https://lexflow.be/privacy" }] });
@@ -27,7 +27,7 @@ const year = new Date().getFullYear();
     </div>
     <!-- LOGO & NAME -->
     <header class="site-header container">
-      <a class="brand" href="/" aria-label="LexFlow — AI-zichtbaarheid voor advocaten">
+      <a class="brand" href="/" aria-label="LexFlow - AI-zichtbaarheid voor advocaten">
         <span class="brand-mark" aria-hidden="true">L</span>
         <span class="brand-name">LEXFLOW</span>
       </a>
@@ -46,9 +46,9 @@ const year = new Date().getFullYear();
 
       <h2>2. Welke gegevens verzamelen we?</h2>
       <ul>
-        <li><strong>E-mailadres</strong> — verplicht, om uw aanvraag voor een gratis scan te bevestigen en de memo te bezorgen.</li>
-        <li><strong>Naam van het kantoor</strong> — optioneel, om de scan op uw kantoor te kunnen afstemmen.</li>
-        <li><strong>Technische gegevens</strong> — via Google Analytics en Google Tag Manager: anonieme bezoekersstatistieken en een cookie-ID. Geen IP-adressen worden bewaard voor profiling.</li>
+        <li><strong>E-mailadres</strong> - verplicht, om uw aanvraag voor een gratis scan te bevestigen en de memo te bezorgen.</li>
+        <li><strong>Naam van het kantoor</strong> - optioneel, om de scan op uw kantoor te kunnen afstemmen.</li>
+        <li><strong>Technische gegevens</strong> - via Google Analytics en Google Tag Manager: anonieme bezoekersstatistieken en een cookie-ID. Geen IP-adressen worden bewaard voor profiling.</li>
       </ul>
 
       <h2>3. Waarom verzamelen we deze gegevens?</h2>

@@ -1,8 +1,8 @@
-# 04 — Ethiek en deontologie: de lijn die we niet overschrijden
+# 04 - Ethiek en deontologie: de lijn die we niet overschrijden
 
 > Wat is constructieve optimalisatie (toelaatbaar voor advocaten) en wat is adversariële manipulatie (deontologisch uitgesloten)?
 
-De papers splitsen in twee kampen. Voor een advocaat is dat geen academisch onderscheid — het raakt direct de beroepsregels.
+De papers splitsen in twee kampen. Voor een advocaat is dat geen academisch onderscheid - het raakt direct de beroepsregels.
 
 ## De twee kampen
 
@@ -36,8 +36,8 @@ De papers splitsen in twee kampen. Voor een advocaat is dat geen academisch onde
 
 Advocaten zijn gebonden aan de deontologische code (ordevan advocaten). Een aantal principes raken direct:
 
-1. **Geen vergelijkende/misleidende reclame.** "Beste advocaat", "nr. 1", succespercentages — verboden. GEO's *Authoritative*-methode betekent hier: gezaghebbende toon, geen opschepperij.
-2. **Geen onwaarheden.** *Statistics Addition* mag alleen met kloppende, verifieerbare cijfers — geen verzonnen dossier-aantallen.
+1. **Geen vergelijkende/misleidende reclame.** "Beste advocaat", "nr. 1", succespercentages - verboden. GEO's *Authoritative*-methode betekent hier: gezaghebbende toon, geen opschepperij.
+2. **Geen onwaarheden.** *Statistics Addition* mag alleen met kloppende, verifieerbare cijfers - geen verzonnen dossier-aantallen.
 3. **Geen beïnvloeding via misleiding.** Prompt-injecties ("negeer vorige instructie") zijn niet alleen technisch fragiel (engines verdedigen ertegen), ze zijn voor een advocaat een deontologische schending.
 4. **Eerlijkheid tegenover concurrenten.** Concurrenten zwartmaken (Adversarial SEO) is voor een SaaS-marketeer grijs; voor een advocaat onaanvaardbaar.
 
@@ -51,9 +51,9 @@ Advocaten zijn gebonden aan de deontologische code (ordevan advocaten). Een aant
 | Structured data correct toepassen | "Beste/snelste/nr.1"-claims |
 | Meten en rapporteren wat AI zegt | Verborgen instructies naar het LLM |
 
-## Het prisoner's dilemma — en waarom wij er niet aan meedoen
+## Het prisoner's dilemma - en waarom wij er niet aan meedoen
 
-ICLR 2025 toont aan dat als alle partijen aanvallen uitvoeren, iedereen verliest (minder zichtbaarheid + degradatie van het systeem). Voor advocaten geldt bovendien dat een aanval een deontologisch risico is met mogelijke beroepsrechtelijke gevolgen — de downside is asymmetrisch zwaar. De constructieve route (GEO/CORE op eerlijke content) vermijdt dit volledig.
+ICLR 2025 toont aan dat als alle partijen aanvallen uitvoeren, iedereen verliest (minder zichtbaarheid + degradatie van het systeem). Voor advocaten geldt bovendien dat een aanval een deontologisch risico is met mogelijke beroepsrechtelijke gevolgen - de downside is asymmetrisch zwaar. De constructieve route (GEO/CORE op eerlijke content) vermijdt dit volledig.
 
 ## Conclusie
 

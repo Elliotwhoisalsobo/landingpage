@@ -1,4 +1,4 @@
-# 05 — Bronnen: de vijf papers
+# 05 - Bronnen: de vijf papers
 
 Deze vijf papers vormen de onderzoeksbasis. Liggen in `ai-search-optimalisation/onderzoek/`.
 
@@ -35,7 +35,7 @@ ai-search-optimalisation/onderzoek/
 - **Bestand:** `2026.acl-long.413.pdf`
 - **Bron:** Xing, Li, Du, Hu (NUS / USC / Georgetown / Arizona State). ACL 2026 (Long Papers).
 - **Hoofdclaim:** Twee-fasen token-optimalisatie (GCG + entropy-gewogen sampling) maakt natuurlijke, moeilijk detecteerbare perturbaties die een target-item promoveren. Cross-model transfer.
-- **Mapping naar product:** bewijst dat rangbeïnvloeding subtiel kan — relevant voor de ethische grens (`04-ethiek`): wat technisch elegant is als aanvalsmethode staat aan de verkeerde kant van de lijn voor advocaten.
+- **Mapping naar product:** bewijst dat rangbeïnvloeding subtiel kan - relevant voor de ethische grens (`04-ethiek`): wat technisch elegant is als aanvalsmethode staat aan de verkeerde kant van de lijn voor advocaten.
 - **Code:** github.com/glad-lab/RAF
 
 ## 4. Ranking Manipulation for Conversational Search Engines
@@ -49,14 +49,14 @@ ai-search-optimalisation/onderzoek/
 
 - **Bestand:** `6195_Adversarial_Search_Engine.pdf`
 - **Bron:** Nestaas, Debenedetti, Tramèr (ETH Zürich). ICLR 2025.
-- **Hoofdclaim:** "Preference Manipulation Attacks" — website-inhoud of plugin-documentatie kan een LLM verleiden de aanvaller te promoten en concurrenten te discrediteren. Aangetoond op Bing en Perplexity, en op plugin-API's voor GPT-4 en Claude. Leidt tot een prisoner's dilemma. Microsoft kreeg verantwoorde openbaring en bouwde extra beschermingen.
-- **Mapping naar product:** toont aan dat (a) het in het wild werkt, (b) engines terugslaan — methodes verouderen, dus herhaalbare meting is nodig (`01-haalbaarheid`), en (c) de adversariële route deontologisch uitgesloten is (`04-ethiek`).
+- **Hoofdclaim:** "Preference Manipulation Attacks" - website-inhoud of plugin-documentatie kan een LLM verleiden de aanvaller te promoten en concurrenten te discrediteren. Aangetoond op Bing en Perplexity, en op plugin-API's voor GPT-4 en Claude. Leidt tot een prisoner's dilemma. Microsoft kreeg verantwoorde openbaring en bouwde extra beschermingen.
+- **Mapping naar product:** toont aan dat (a) het in het wild werkt, (b) engines terugslaan - methodes verouderen, dus herhaalbare meting is nodig (`01-haalbaarheid`), en (c) de adversariële route deontologisch uitgesloten is (`04-ethiek`).
 
 ## Leesvolgorde-aanbeveling
 
 Voor wie het concept wil begrijpen, in volgorde van relevantie voor LexFlow:
 
-1. **GEO** — het constructieve fundament.
-2. **CORE** — bewijs dat synthese te beïnvloeden is, in hedendaagse modellen.
-3. **Adversarial SEO** (ICLR 2025) — risico's en waarom we de aanvalskant vermijden.
-4. **Ranking Manipulation** (EMNLP) en **RAF** (ACL) — diepgaande aanvalsmechanismen; vooral relevant als risico-inzicht.
+1. **GEO** - het constructieve fundament.
+2. **CORE** - bewijs dat synthese te beïnvloeden is, in hedendaagse modellen.
+3. **Adversarial SEO** (ICLR 2025) - risico's en waarom we de aanvalskant vermijden.
+4. **Ranking Manipulation** (EMNLP) en **RAF** (ACL) - diepgaande aanvalsmechanismen; vooral relevant als risico-inzicht.
