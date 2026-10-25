@@ -4,27 +4,27 @@
       <header class="routekop">
         <span class="sectie-icoon" aria-hidden="true"><i class="ph ph-robot"></i></span>
         <div>
-          <h2>Wat de cliënt te lezen krijgt van AI</h2>
-          <p>Het antwoord dat de keuze bepaalt, met concurrenten gemarkeerd.</p>
+          <h2>Waarom doorverwijzing niet meer volstaat</h2>
+          <p>Cliënten vertrouwen AI-zoek boven mond-tot-mond. Wie AI niet bereikt, verliest nieuwe dossiers.</p>
         </div>
       </header>
       <ol class="routestappen">
         <li class="routestap">
           <div>
             <h3>De aanleiding</h3>
-            <p>Voor de cliënt u ooit belt, heeft hij AI al om een advocaat gevraagd. AI antwoordt met een namenlijstje.</p>
+            <p>Mond-tot-mond was decennialang het kanaal voor advocaten. Dat kanaal verliest terrein: cliënten gebruiken en vertrouwen almaar meer AI-zoekmachines.</p>
           </div>
         </li>
         <li class="routestap">
           <div>
-            <h3>Wat AI kiest</h3>
-            <p>Wie bovenaan staat, bepaalt AI - op basis van wat online over u te vinden is, niet op basis van uw kunde.</p>
+            <h3>Wat dat voor u betekent</h3>
+            <p>Op een vraag over een advocaat in uw specialisme en regio antwoordt AI met een korte namenlijst. Wie bovenaan staat, bepaalt AI — niet op kunde, maar op online aanwezigheid.</p>
           </div>
         </li>
         <li class="routestap">
           <div>
             <h3>Het risico zonder overzicht</h3>
-            <p>Zonder te weten wat AI over u zegt, probeert u cliënten te winnen die allang bij een concurrent zitten.</p>
+            <p>Zonder inzicht in dat antwoord blijft u doorvertrouwen op een kanaal dat almaar minder cliënten oplevert.</p>
           </div>
         </li>
       </ol>
@@ -35,7 +35,7 @@
         <span class="sectie-icoon" aria-hidden="true"><i class="ph ph-gauge"></i></span>
         <div>
           <h2>Waarom klassieke marketing de cliënt niet meer bereikt</h2>
-          <p>Gemaakt voor wie zelf zoekt - niet voor wie AI om advies vraagt.</p>
+          <p>De client consulteert al maar meer AI in zijn zoektocht naar een goede advocaat.</p>
         </div>
       </header>
       <ol class="routestappen">

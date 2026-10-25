@@ -5,10 +5,10 @@
       <div class="maker-text">
         <h2 id="maker-titel">Hoi, ik ben Bo</h2>
         <p>
-          Ik bouw LexVind om AI-zichtbaarheid eenvoudiger te maken voor Belgische advocatenkantoren: wat AI over u zegt, waarom, en wat u concreet moet veranderen.
+          Ik bouw LexVind om uw kantoor zichtbaar te maken voor de moderne client: wat AI over u zegt, waarom, en wat u concreet moet veranderen.
         </p>
         <p>
-          Mijn doel is een eerlijke, persoonlijke memo - geen dashboard met jargon. Zodat u weet waar u staat, zonder tech-kennis of dure consultants.
+          Mijn doel is om uw kantoor zo hoog mogelijk te krijgen in de resultaten van AI zoek en aanbevelings machines geen oude reclame maar slimme wiskunde en algoritmes.
         </p>
         <p class="maker-linkedin">
           <a href="https://www.linkedin.com/in/bo-vermote/" target="_blank" rel="noopener noreferrer">
