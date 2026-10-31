@@ -8,7 +8,7 @@ const steps = [
   },
   {
     number: "2",
-    title: "Ontvang uw memo",
+    title: "Ontvang uw rapport",
     description:
       "Vandaag staat een persoonlijke PDF in uw inbox: wat AI antwoordt, waarom, en wat er moet veranderen.",
   },
@@ -16,7 +16,7 @@ const steps = [
     number: "3",
     title: "Kies uw volgende stap",
     description:
-      "Geef de memo aan uw webbouwer, of laat ons de acties uitvoeren: allebei eerlijk.",
+      "Geef het rapport aan uw webbouwer, of laat ons de acties uitvoeren: allebei eerlijk.",
   },
 ];
 </script>
@@ -25,8 +25,7 @@ const steps = [
   <section class="lexvind-steps" aria-labelledby="steps-title">
     <div class="steps-container">
       <header class="steps-header">
-        <h2 id="steps-title">Van aanvraag tot memo.</h2>
-        <p>Drie stappen, geen software om aan te raken. De memo verschijnt in uw inbox.</p>
+        <h2 id="steps-title">Van aanvraag tot rapport.</h2>
       </header>
 
       <ol class="steps-grid">

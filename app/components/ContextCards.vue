@@ -66,13 +66,16 @@
 .route-raster {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 22px;
+  gap: 0 22px;
   width: min(820px, 100%);
   margin: 36px auto 0;
   text-align: start;
 }
 
 .routekaart {
+  display: grid;
+  grid-row: span 4;
+  grid-template-rows: subgrid;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 20px;
@@ -83,14 +86,14 @@
 .routekop {
   display: grid;
   grid-template-columns: auto 1fr;
-  align-items: center;
+  align-items: start;
   gap: 16px;
-  padding: 28px 28px 24px;
+  padding: 28px;
   border-bottom: 1px solid var(--line);
 }
 
 .routekop h2 {
-  margin: 0 0 4px;
+  margin: 0 0 12px;
   font-family: var(--serif);
   font-size: 1.75rem;
   font-weight: 400;
@@ -105,6 +108,9 @@
 }
 
 .routestappen {
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
   margin: 0;
   padding: 28px;
   list-style: none;
@@ -114,10 +120,14 @@
 .routestap {
   position: relative;
   display: grid;
-  grid-template-columns: 34px 1fr;
+  grid-template-columns: 34px minmax(0, 1fr);
+  align-content: start;
   gap: 14px;
-  min-height: 88px;
   counter-increment: route;
+}
+
+.routestap:not(:last-child) {
+  padding-bottom: 24px;
 }
 
 .routestap:not(:last-child)::after {
@@ -147,9 +157,10 @@
 }
 
 .routestap h3 {
-  margin: 1px 0 4px;
+  margin: 0 0 8px;
   font-size: 0.88rem;
   font-weight: 600;
+  line-height: 1.4;
 }
 
 .routestap p {
@@ -177,6 +188,13 @@
 @media (max-width: 760px) {
   .route-raster {
     grid-template-columns: minmax(0, 1fr);
+    row-gap: 22px;
+  }
+
+  .routekaart,
+  .routestappen {
+    grid-row: auto;
+    grid-template-rows: auto;
   }
 
   .routekop {

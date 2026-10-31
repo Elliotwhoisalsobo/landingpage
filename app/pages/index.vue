@@ -20,7 +20,7 @@ useHead({ link: [{ rel: "canonical", href: "https://lexvind.be/" }] });
       <div class="edge-card edge-card-right">
         <span>AI-ANTWOORDEN</span>
         <span>ADVOCATEN</span>
-        <span>MEMO</span>
+        <span>RAPPORT</span>
       </div>
     </div>
     <!-- LOGO & NAME -->
