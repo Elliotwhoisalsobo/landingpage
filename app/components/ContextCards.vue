@@ -18,7 +18,7 @@
         <li class="routestap">
           <div>
             <h3>Wat dat voor u betekent</h3>
-            <p>Op een vraag over een advocaat in uw specialisme en regio antwoordt AI met een korte namenlijst. Wie bovenaan staat, bepaalt AI — niet op kunde, maar op online aanwezigheid.</p>
+            <p>Op een vraag over een advocaat in uw specialisme en regio antwoordt AI met een korte namenlijst. Wie bovenaan staat, bepaalt AI: niet op kunde, maar op online aanwezigheid.</p>
           </div>
         </li>
         <li class="routestap">
@@ -48,7 +48,7 @@
         <li class="routestap">
           <div>
             <h3>Wat u eigenlijk nodig hebt</h3>
-            <p>Een plek in dat ene AI-antwoord - geen hogere positie op Google.</p>
+            <p>Een plek in dat ene AI-antwoord, geen hogere positie op Google.</p>
           </div>
         </li>
         <li class="routestap">

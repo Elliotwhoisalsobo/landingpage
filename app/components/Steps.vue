@@ -4,7 +4,7 @@ const steps = [
     number: "1",
     title: "Vraag uw scan aan",
     description:
-      "Vul uw kantoor en e-mail in. Wij draaien de scan manueel - geen live-scan, geen open kraan.",
+      "Vul uw kantoor en e-mail in. Wij draaien de scan manueel: geen live-scan, geen open kraan.",
   },
   {
     number: "2",
@@ -16,7 +16,7 @@ const steps = [
     number: "3",
     title: "Kies uw volgende stap",
     description:
-      "Geef de memo aan uw webbouwer, of laat ons de acties uitvoeren - allebei eerlijk.",
+      "Geef de memo aan uw webbouwer, of laat ons de acties uitvoeren: allebei eerlijk.",
   },
 ];
 </script>
@@ -26,7 +26,7 @@ const steps = [
     <div class="steps-container">
       <header class="steps-header">
         <h2 id="steps-title">Van aanvraag tot memo.</h2>
-        <p>Drie stappen, geen software om aan te raken - de memo verschijnt in uw inbox.</p>
+        <p>Drie stappen, geen software om aan te raken. De memo verschijnt in uw inbox.</p>
       </header>
 
       <ol class="steps-grid">

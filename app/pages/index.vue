@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
   title: "LexVind - AI-zichtbaarheid voor Belgische advocaten",
-  description: "LexVind meet wat AI over uw advocatenkantoor zegt, legt het uit in gewone taal en maakt concreet wat er moet veranderen - zonder tech-kennis.",
+  description: "LexVind meet wat AI over uw advocatenkantoor zegt, legt het uit in gewone taal en maakt concreet wat er moet veranderen, zonder tech-kennis.",
 });
 useHead({ link: [{ rel: "canonical", href: "https://lexvind.be/" }] });
 </script>
@@ -38,7 +38,7 @@ useHead({ link: [{ rel: "canonical", href: "https://lexvind.be/" }] });
       <p class="hero-copy">
         Tegen de tijd dat een cliënt u belt, heeft hij AI al om de beste advocaat
         gevraagd. Vaak staat een concurrent in het antwoord, niet u. LexVind laat zien
-        wat AI over uw kantoor zegt - in gewone taal, met concrete acties.
+        wat AI over uw kantoor zegt, in gewone taal en met concrete acties.
       </p>
 
       <!-- COMPONENTS -->
