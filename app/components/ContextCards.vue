@@ -1,30 +1,30 @@
 <template>
-  <section class="route-raster" aria-label="Wat AI beslist voor uw kantoor en waarom generieke tools falen">
+  <section class="route-raster" aria-label="Wordt uw kantoor genoemd door ChatGPT en klopt de informatie?">
     <article class="routekaart">
       <header class="routekop">
-        <span class="sectie-icoon" aria-hidden="true"><i class="ph ph-robot"></i></span>
+        <span class="sectie-icoon" aria-hidden="true"><i class="ph ph-globe"></i></span>
         <div>
-          <h2>Waarom doorverwijzing niet meer volstaat</h2>
-          <p>Cliënten vertrouwen AI-zoek boven mond-tot-mond. Wie AI niet bereikt, verliest nieuwe dossiers.</p>
+          <h2>Een website hebben is niet genoeg</h2>
+          <p>Uw kantoor heeft een website. Maar wordt u ook genoemd als iemand ChatGPT om een advocaat vraagt?</p>
         </div>
       </header>
       <ol class="routestappen">
         <li class="routestap">
           <div>
-            <h3>De aanleiding</h3>
-            <p>Mond-tot-mond was decennialang het kanaal voor advocaten. Dat kanaal verliest terrein: cliënten gebruiken en vertrouwen almaar meer AI-zoekmachines.</p>
+            <h3>Een cliënt zoekt hulp, geen kantoornaam</h3>
+            <p>Iemand vraagt bijvoorbeeld: “Welke advocaat in Gent kan mij helpen bij een ontslag?” Die persoon kent uw kantoor nog niet.</p>
           </div>
         </li>
         <li class="routestap">
           <div>
-            <h3>Wat dat voor u betekent</h3>
-            <p>Op een vraag over een advocaat in uw specialisme en regio antwoordt AI met een korte namenlijst. Wie bovenaan staat, bepaalt AI: niet op kunde, maar op online aanwezigheid.</p>
+            <h3>Komt uw kantoor dan naar voren?</h3>
+            <p>Ook als u zulke zaken behandelt, is het niet vanzelfsprekend dat ChatGPT uw naam noemt.</p>
           </div>
         </li>
         <li class="routestap">
           <div>
-            <h3>Het risico zonder overzicht</h3>
-            <p>Zonder inzicht in dat antwoord blijft u doorvertrouwen op een kanaal dat almaar minder cliënten oplevert.</p>
+            <h3>Dat onderzoeken wij voor u</h3>
+            <p>LexVind stelt vragen over uw vakgebied en gemeente. Zo ontdekt u of uw kantoor bij die vragen genoemd wordt.</p>
           </div>
         </li>
       </ol>
@@ -32,29 +32,29 @@
 
     <article class="routekaart">
       <header class="routekop">
-        <span class="sectie-icoon" aria-hidden="true"><i class="ph ph-gauge"></i></span>
+        <span class="sectie-icoon" aria-hidden="true"><i class="ph ph-robot"></i></span>
         <div>
-          <h2>Waarom klassieke marketing de cliënt niet meer bereikt</h2>
-          <p>De client consulteert al maar meer AI in zijn zoektocht naar een goede advocaat.</p>
+          <h2>Wat vertelt ChatGPT over uw kantoor?</h2>
+          <p>Als uw naam genoemd wordt, wilt u dat een mogelijke cliënt ook de juiste informatie krijgt.</p>
         </div>
       </header>
       <ol class="routestappen">
         <li class="routestap">
           <div>
-            <h3>De aanleiding</h3>
-            <p>Advertenties en SEO bereiken wie actief zoekt; de cliënt vraagt vandaag één ding aan AI en krijgt één antwoord.</p>
+            <h3>Waarvoor kunnen cliënten bij u terecht?</h3>
+            <p>Wordt uw kantoor genoemd voor de zaken die u werkelijk behandelt?</p>
           </div>
         </li>
         <li class="routestap">
           <div>
-            <h3>Wat u eigenlijk nodig hebt</h3>
-            <p>Een plek in dat ene AI-antwoord, geen hogere positie op Google.</p>
+            <h3>Kloppen uw gegevens?</h3>
+            <p>Staan uw vestigingsplaats en website juist vermeld? Of krijgt de cliënt verouderde of onjuiste informatie?</p>
           </div>
         </li>
         <li class="routestap">
           <div>
-            <h3>Het risico zonder overzicht</h3>
-            <p>U meet kliks en bezoekers, terwijl de echte beslissing plaatsvindt waar u niet meet.</p>
+            <h3>U krijgt duidelijk advies</h3>
+            <p>We laten zien wat ChatGPT over uw kantoor vertelt en welke informatie u kunt verbeteren. In gewone taal, zonder dat u zelf iets van computers hoeft te kennen.</p>
           </div>
         </li>
       </ol>
