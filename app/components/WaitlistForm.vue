@@ -17,7 +17,7 @@ async function submit() {
     isError.value = false;
     message.value = result === "existing"
       ? "U heeft al een scan aangevraagd."
-      : "Bedankt. We draaien uw scan manueel en sturen de memo vandaag naar uw inbox.";
+      : "Bedankt. We draaien uw scan manueel en sturen het rapport vandaag naar uw inbox.";
     if (result === "created") {
       email.value = "";
       company.value = "";

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
   title: "LexVind - AI-zichtbaarheid voor Belgische advocaten",
-  description: "LexVind meet wat AI over uw advocatenkantoor zegt, legt het uit in gewone taal en maakt concreet wat er moet veranderen - zonder tech-kennis.",
+  description: "LexVind meet wat AI over uw advocatenkantoor zegt, legt het uit in gewone taal en maakt concreet wat er moet veranderen, zonder tech-kennis.",
 });
 useHead({ link: [{ rel: "canonical", href: "https://lexvind.be/" }] });
 </script>
@@ -20,7 +20,7 @@ useHead({ link: [{ rel: "canonical", href: "https://lexvind.be/" }] });
       <div class="edge-card edge-card-right">
         <span>AI-ANTWOORDEN</span>
         <span>ADVOCATEN</span>
-        <span>MEMO</span>
+        <span>RAPPORT</span>
       </div>
     </div>
     <!-- LOGO & NAME -->
@@ -33,12 +33,12 @@ useHead({ link: [{ rel: "canonical", href: "https://lexvind.be/" }] });
     <!-- WEBSITE TITLE -->
     <section class="hero container" aria-labelledby="hero-title">
       <h1 id="hero-title" class="hero-title--compact">
-        De cliënt vraagt <em>AI</em> om een advocaat<span>LexVind zet u in het <em>antwoord</em></span>
+        Wordt uw kantoor genoemd als iemand AI om een advocaat in uw vakgebied vraagt?
       </h1>
       <p class="hero-copy">
-        Tegen de tijd dat een cliënt u belt, heeft hij AI al om de beste advocaat
-        gevraagd. Vaak staat een concurrent in het antwoord, niet u. LexVind laat zien
-        wat AI over uw kantoor zegt - in gewone taal, met concrete acties.
+        Als iemand AI vraagt om een advocaat in uw vakgebied, weet u dan of uw kantoor
+        naar voren komt? LexVind test zulke vragen voor uw regio en laat zien waar
+        kansen liggen om beter gevonden te worden.
       </p>
 
       <!-- COMPONENTS -->

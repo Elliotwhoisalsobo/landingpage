@@ -22,7 +22,7 @@ const year = new Date().getFullYear();
       <div class="edge-card edge-card-right">
         <span>AI-ANTWOORDEN</span>
         <span>ADVOCATEN</span>
-        <span>MEMO</span>
+        <span>RAPPORT</span>
       </div>
     </div>
     <!-- LOGO & NAME -->
@@ -46,14 +46,14 @@ const year = new Date().getFullYear();
 
       <h2>2. Welke gegevens verzamelen we?</h2>
       <ul>
-        <li><strong>E-mailadres</strong> - verplicht, om uw aanvraag voor een gratis scan te bevestigen en de memo te bezorgen.</li>
-        <li><strong>Naam van het kantoor</strong> - optioneel, om de scan op uw kantoor te kunnen afstemmen.</li>
-        <li><strong>Technische gegevens</strong> - via Google Analytics en Google Tag Manager: anonieme bezoekersstatistieken en een cookie-ID. Geen IP-adressen worden bewaard voor profiling.</li>
+        <li><strong>E-mailadres</strong>: verplicht, om uw aanvraag voor een gratis scan te bevestigen en het rapport te bezorgen.</li>
+        <li><strong>Naam van het kantoor</strong>: optioneel, om de scan op uw kantoor te kunnen afstemmen.</li>
+        <li><strong>Technische gegevens</strong>: via Google Analytics en Google Tag Manager anonieme bezoekersstatistieken en een cookie-ID. Geen IP-adressen worden bewaard voor profiling.</li>
       </ul>
 
       <h2>3. Waarom verzamelen we deze gegevens?</h2>
       <ul>
-        <li>Uw inschrijving voor de gratis scan afhandelen en u de memo toesturen (uw toestemming, art. 6 §1 lit. a AVG).</li>
+        <li>Uw inschrijving voor de gratis scan afhandelen en u het rapport toesturen (uw toestemming, art. 6 §1 lit. a AVG).</li>
         <li>Anonieme bezoekersstatistieken bijhouden om de website te verbeteren (gerechtvaardigd belang, art. 6 §1 lit. f AVG).</li>
       </ul>
 
